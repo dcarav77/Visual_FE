@@ -1,10 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Simple Flask Front End</title>
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Simple Math Calculator</title>
 </head>
 <body>
-    <h1>Hello, Flask!</h1>
+    <h1>Simple Math Calculator</h1>
+    <form method="post" action="/calculate">
+        <label for="operation">Choose an operation:</label>
+        <select name="operation" id="operation">
+            <option value="add">Addition</option>
+            <option value="subtract">Subtraction</option>
+            <option value="multiply">Multiplication</option>
+            <option value="divide">Division</option>
+        </select>
+        <br>
+        <label for="num1">Enter the first number:</label>
+        <input type="number" name="num1" id="num1">
+        <br>
+        <label for="num2">Enter the second number:</label>
+        <input type="number" name="num2" id="num2">
+        <br>
+        <input type="submit" value="Calculate">
+    </form>
+    {% if result %}
+        <h2>Result: {{ result }}</h2>
+    {% endif %}
 </body>
 </html>
