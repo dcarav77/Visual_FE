@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+
 class GetRequest extends Component {
   componentDidMount() {
     const apiUrl = 'https://jsonplaceholder.typicode.com/posts';
@@ -10,7 +11,7 @@ class GetRequest extends Component {
   }
 
   render() {
-    return <div>GetRequest Component</div>;
+    
   }
 }
 
