@@ -1,5 +1,6 @@
 // SignUp.js
 import React from 'react';
+import './sign_up.css';
 
 function SignUp() {
     console.log('SignUp component rendered');
