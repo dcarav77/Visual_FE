@@ -29,7 +29,7 @@
         </div>
         
         <div class="payment-details">
-            <h2>PAYMENT INFORMATION:</h2>
+            <h2>BILLING INFORMATION:</h2>
             <form>
                 <!-- Billing information -->
                 <div class="form-group">
@@ -92,11 +92,10 @@
                 
                 <!-- Payment information -->
                 <div class="form-group">
-                    <label for="paymentMethod">Payment Method</label>
-                    <select id="paymentMethod" name="paymentMethod">
-                        <option value="creditCard">Credit Card</option>
-                        <option value="debitCard">Debit Card</option>
-                    </select>
+                    <label for="paymentMethod">Payment Information</label>
+                    <div class="credit-card-input">
+                        <input type="text" id="creditCardNumber" name="creditCardNumber" placeholder="Card Number" required>
+                    </div>
                 </div>
                 
                 <!-- Additional payment fields can be added here -->

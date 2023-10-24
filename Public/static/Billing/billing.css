@@ -98,4 +98,25 @@ body, h1, h2, table {
   button[type="submit"]:hover {
     background-color: #0056b3;
   }
-  
+  /* Style the credit card input container */
+.credit-card-input {
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 5px;
+    position: relative;
+}
+
+/* Style the credit card input */
+.credit-card-input input {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+/* Style the placeholder text */
+.credit-card-input input::placeholder {
+    color: #ccc;
+}
+
+/* Add additional styles as needed */
