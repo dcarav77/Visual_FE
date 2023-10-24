@@ -1,8 +1,11 @@
 import React from 'react';
 import './home.css'
+import { useNavigate } from 'react-router-dom';
+import { Navigate } from 'react-router-dom';
 
 
 function Home() {
+  const navigate = useNavigate();
   return (
     <div className="Home">
       {/* Hero Section */}
@@ -48,9 +51,10 @@ function Home() {
       {/* Download/Signup CTA */}
       <section className="cta">
         <h2>Ready to Get Started?</h2>
-        <button className="cta-button">Sign Up Now</button>
-      </section>
-    </div>
+        <button className="cta-button" onClick={() => navigate('/signup')}>  Sign Up Now </button>
+
+      </section> 
+    </div> 
   );
 }
 

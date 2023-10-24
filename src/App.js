@@ -3,8 +3,9 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import GetRequest from './API/fetchPlaceholder';
-import SignUp from './React_Components/routes/Sign_Up/SignUp';
-import Home from './React_Components/Home_Base/Home.js';
+
+import Home from './Home_Base/Home.js';
+import { Navigate } from 'react-router-dom';
 
 
 function App() {
@@ -22,7 +23,7 @@ function App() {
       <Routes>
        
         <Route path="/" element={<Home />} />
-        <Route path="/signup" element={<SignUp />} />
+        
        
       </Routes>
 
