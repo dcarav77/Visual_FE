@@ -12,7 +12,8 @@
     "start": "node -r dotenv/config ./node_modules/react-scripts/scripts/start.js"
   },
   "devDependencies": {
-    "@babel/plugin-proposal-private-property-in-object": ""
+    "@babel/plugin-proposal-private-property-in-object": "",
+    "html-loader": "^4.2.0"
   },
   "browserslist": {
     "production": [

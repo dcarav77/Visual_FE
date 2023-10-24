@@ -1,0 +1,101 @@
+/* Reset some default styles */
+body, h1, h2, table {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Style the body */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+  }
+  
+  /* Style the billing container */
+  .billing-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Style headings */
+  h1 {
+    font-size: 24px;
+  }
+  
+  h2 {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+  
+  /* Style the cart contents table */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  table, th, td {
+    border: 1px solid #ccc;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: left;
+  }
+  
+  /* Style the subtotal and taxes */
+  .subtotal {
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .taxes {
+    font-size: 12px;
+    color: #888;
+    margin-top: 5px;
+  }
+  
+  /* Style the zip code input field */
+  .zip-code input {
+    width: 100%;
+    padding: 5px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  /* Style the form groups */
+  .form-group {
+    margin-bottom: 10px;
+  }
+  
+  /* Style labels */
+  label {
+    font-weight: bold;
+  }
+  
+  /* Style form inputs and selects */
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  select {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  /* Style the submit button */
+  button[type="submit"] {
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  

@@ -8,6 +8,7 @@ import Home from './Home_Base/Home.js';
 import { Navigate } from 'react-router-dom';
 
 
+
 function App() {
   return (
     <div className="App">
@@ -23,6 +24,7 @@ function App() {
       <Routes>
        
         <Route path="/" element={<Home />} />
+        <Route path="/" element={<billing />} />
         
        
       </Routes>
