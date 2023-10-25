@@ -12,13 +12,13 @@ function Home() {
       <section className="hero">
         <h1>Welcome to Our Fitness App</h1>
         <p>Your journey to a healthier you starts here.</p>
-        <button className="cta-button">Get Started</button>
+        <button className="cta-button" onClick={() => navigate('/GetStarted')}>Get Started</button>
       </section>
 
       {/* About Us */}
       <section className="about">
         <h2>About Us</h2>
-        <p>We are dedicated to helping you achieve your fitness goals...</p>
+        <p>SPEED STRENGTH & ENDURANCE</p>
       </section>
 
       {/* Features */}

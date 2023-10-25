@@ -7,34 +7,28 @@
     <link rel="stylesheet" href="billing.css">
 </head>
 <body>
-    <div class="billing-container">
-        <h1>Select Payment Type</h1>
-        <!-- Payment options go here -->
-        
+    
         <h2>CART CONTENTS:</h2>
         <table>
-            <!-- Cart contents table -->
+            <tbody>
+                <tr class="table-header">
+                  <th>Qty</th>
+                  <th>Item Description</th>
+                  <th>Price</th>
+                  <th>Total</th>
+                </tr>
+                <!-- Add rows for cart items dynamically using JavaScript -->
+              </tbody>
         </table>
         
-        <div class="subtotal">
-            Subtotal: $89.00
-        </div>
-        
-        <div class="taxes">
-            Applicable state taxes may be applied
-        </div>
-        
-        <div class="zip-code">
-            Enter Zip Code / Postal Code* <input type="text">
-        </div>
-        
+         
         <div class="payment-details">
             <h2>BILLING INFORMATION:</h2>
             <form>
                 <!-- Billing information -->
                 <div class="form-group">
                     <label for="country">Country</label>
-                    <select id="country" name="country">
+                    <select id="country" name="country" class="shorter-input">
                         <option value="United States">United States</option>
                         <option value="Canada">Canada</option>
                         <!-- Add more countries as needed -->
@@ -43,47 +37,47 @@
                 
                 <div class="form-group">
                     <label for="firstName">First Name</label>
-                    <input type="text" id="firstName" name="firstName" required>
+                    <input type="text" id="firstName" name="firstName" class="shorter-input">
                 </div>
                 
                 <div class="form-group">
                     <label for="lastName">Last Name</label>
-                    <input type="text" id="lastName" name="lastName" required>
+                    <input type="text" id="lastName" name="lastName" class="shorter-input">
                 </div>
                 
                 <div class="form-group">
                     <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required>
+                    <input type="email" id="email" name="email" class="shorter-input">
                 </div>
                 
                 <div class="form-group">
                     <label for="phone">Phone</label>
-                    <input type="tel" id="phone" name="phone" required>
+                    <input type="tel" id="phone" name="phone" class="shorter-input">
                 </div>
                 
                 <div class="form-group">
                     <label for="address1">Address 1</label>
-                    <input type="text" id="address1" name="address1" required>
+                    <input type="text" id="address1" name="address1" class="shorter-input">
                 </div>
                 
                 <div class="form-group">
                     <label for="address2">Address 2</label>
-                    <input type="text" id="address2" name="address2">
+                    <input type="text" id="address2" name="address2" class="shorter-input">
                 </div>
                 
                 <div class="form-group">
                     <label for="zip">Zip</label>
-                    <input type="text" id="zip" name="zip" required>
+                    <input type="text" id="zip" name="zip" class="shorter-input">
                 </div>
                 
                 <div class="form-group">
                     <label for="city">City</label>
-                    <input type="text" id="city" name="city" required>
+                    <input type="text" id="city" name="city" class="shorter-input">
                 </div>
                 
                 <div class="form-group">
                     <label for="state">State</label>
-                    <select id="state" name="state">
+                    <select id="state" name="state" class="shorter-input">
                         <option value="CA">California</option>
                         <option value="NY">New York</option>
                         <!-- Add more states as needed -->
@@ -94,7 +88,7 @@
                 <div class="form-group">
                     <label for="paymentMethod">Payment Information</label>
                     <div class="credit-card-input">
-                        <input type="text" id="creditCardNumber" name="creditCardNumber" placeholder="Card Number" required>
+                        <input type="text" id="creditCardNumber" name="creditCardNumber" placeholder="Card Number" class="shorter-input">
                     </div>
                 </div>
                 

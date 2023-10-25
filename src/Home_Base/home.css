@@ -6,8 +6,8 @@
   
   /* Hero Section */
   .hero {
-    background-image: url('/Users/dustin_caravaglia/Desktop/washed/manoman.jpeg');
-    background-size: cover;
+    background-image: url('/Users/dustin_caravaglia/Desktop/it.png');
+    background-size: 110% auto;
     color: #fff;
     padding: 100px 0;
   }

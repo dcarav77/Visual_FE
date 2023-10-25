@@ -1,122 +1,187 @@
 /* Reset some default styles */
 body, h1, h2, table {
-    margin: 0;
-    padding: 0;
-  }
-  
-  /* Style the body */
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-  }
-  
-  /* Style the billing container */
-  .billing-container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Style headings */
-  h1 {
-    font-size: 24px;
-  }
-  
-  h2 {
-    font-size: 20px;
-    margin-top: 20px;
-  }
-  
-  /* Style the cart contents table */
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 10px;
-  }
-  
-  table, th, td {
-    border: 1px solid #ccc;
-  }
-  
-  th, td {
-    padding: 10px;
-    text-align: left;
-  }
-  
-  /* Style the subtotal and taxes */
-  .subtotal {
-    font-weight: bold;
-    margin-top: 10px;
-  }
-  
-  .taxes {
-    font-size: 12px;
-    color: #888;
-    margin-top: 5px;
-  }
-  
-  /* Style the zip code input field */
-  .zip-code input {
-    width: 100%;
-    padding: 5px;
-    margin-top: 10px;
-    border: 1px solid #ccc;
-  }
-  
-  /* Style the form groups */
-  .form-group {
-    margin-bottom: 10px;
-  }
-  
-  /* Style labels */
-  label {
-    font-weight: bold;
-  }
-  
-  /* Style form inputs and selects */
-  input[type="text"],
-  input[type="email"],
-  input[type="tel"],
-  select {
-    width: 100%;
-    padding: 5px;
-    border: 1px solid #ccc;
-  }
-  
-  /* Style the submit button */
-  button[type="submit"] {
-    padding: 10px;
-    margin-top: 20px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-  }
-  
-  button[type="submit"]:hover {
-    background-color: #0056b3;
-  }
-  /* Style the credit card input container */
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif; /* Apply consistent font family */
+}
+
+/* Style the body and HTML elements */
+body, html {
+  background-color: #f0f0f0;
+  height: 100%;
+}
+
+.outer-container {
+  display: flex;
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Center the content vertically */
+  min-height: 100vh; /* Make sure the container takes at least the full viewport height */
+  border-left: 1px solid #ccc; /* Add a left border */
+  border-right: 1px solid #ccc; /* Add a right border */
+}
+
+/* Style the billing container */
+.billing-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  min-height: 100%;
+}
+
+/* Style headings */
+h1, h2 {
+  font-size: 20px; /* Apply a consistent font size */
+  margin-top: 20px;
+}
+
+/* Style the cart contents table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  font-size: 16px; 
+  border: 1px solid #ccc;
+  table-layout: fixed;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #ccc;
+  width: 20%; 
+  font-size: 14px;
+}
+
+/* Style the subtotal and taxes */
+.subtotal {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.taxes {
+  font-size: 12px;
+  color: #888;
+  margin-top: 5px;
+}
+
+/* Style the zip code input field */
+.zip-code input {
+  width: 100%;
+  padding: 5px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  font-size: 16px; /* Apply a consistent font size */
+}
+
+/* Style the form groups */
+.form-group {
+  margin-bottom: 10px;
+}
+
+/* Style labels */
+label {
+  font-weight: bold;
+}
+
+/* Style form inputs and selects */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px; /* Apply a consistent font size */
+}
+
+/* Style the submit button */
+button[type="submit"] {
+  padding: 10px;
+  margin-top: 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px; /* Apply a consistent font size */
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Style the credit card input container */
 .credit-card-input {
-    width: 100%;
-    border: 1px solid #ccc;
-    padding: 5px;
-    position: relative;
+  width: 100%;
+  border: 1px solid #ccc;
+  padding: 5px;
+  position: relative;
 }
 
 /* Style the credit card input */
 .credit-card-input input {
-    width: 100%;
-    border: none;
-    outline: none;
-    font-size: 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 16px; /* Apply a consistent font size */
 }
 
 /* Style the placeholder text */
 .credit-card-input input::placeholder {
-    color: #ccc;
+  color: #ccc;
 }
 
-/* Add additional styles as needed */
+/* Style the table header row */
+.table-header th {
+  text-align: center; /* Center align the headings */
+  background-color: #f0f0f0; /* Background color for the header row */
+  font-size: 18px; /* Apply a consistent font size */
+  padding: 10px; /* Adjust the padding */
+  border: 1px solid #ccc; /* Add border styling */
+}
+
+/* Define the .shorter-input class */
+.shorter-input {
+  width: 70% !important; /* Add !important to ensure it takes precedence */
+}
+
+label {
+  font-weight: bold;
+  width: 110px; /* Change this to the desired label width */
+  display: inline-block;
+  margin-right: 5px; /* Adjust this margin as needed for spacing */
+}
+
+/* Style form inputs and selects */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+.shorter-input {
+  width: calc(100% - 160px);
+  padding: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+/* Style the select elements */
+select {
+  width: calc(100% - 160px);
+}
+
+.shorter-input {
+  width: calc(70% - 160px) 
+}
+
+
+/* Style the table header row */
+.table-header th {
+  text-align: center;
+  background-color: #f0f0f0;
+  font-size: 18px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+

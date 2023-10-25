@@ -7,6 +7,7 @@ import GetRequest from './API/fetchPlaceholder';
 import Home from './Home_Base/Home.js';
 import { Navigate } from 'react-router-dom';
 import BillingPage from './Routes/billingpage';
+import GetStarted from './Routes/GetStarted';
 
 
 
@@ -26,6 +27,7 @@ function App() {
        
         <Route path="/" element={<Home />} />
         <Route path="/signup" element={<BillingPage />} />
+        <Route path="/signup" element={<GetStarted />} />
         
        
       </Routes>
