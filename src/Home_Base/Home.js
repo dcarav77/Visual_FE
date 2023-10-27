@@ -10,15 +10,15 @@ function Home() {
     <div className="Home">
       {/* Hero Section */}
       <section className="hero">
-        <h1>Welcome to Our Fitness App</h1>
-        <p>Your journey to a healthier you starts here.</p>
-        <button className="cta-button" onClick={() => navigate('/GetStarted')}>Get Started</button>
+        <h1>One Step Closer To</h1>
+        <p>Strength and Honor</p>
+        <button className="cta-button" onClick={() => navigate('/UnleashHell')}>Unleash Hell</button>
       </section>
 
       {/* About Us */}
       <section className="about">
-        <h2>About Us</h2>
-        <p>SPEED STRENGTH & ENDURANCE</p>
+        <h2>Comfort is Killing You</h2>
+        <p>Alcohol - Food - Video Games</p>
       </section>
 
       {/* Features */}

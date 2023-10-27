@@ -1,5 +1,3 @@
-//set up routing and render different components
-
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import GetRequest from './API/fetchPlaceholder';
@@ -7,8 +5,11 @@ import GetRequest from './API/fetchPlaceholder';
 import Home from './Home_Base/Home.js';
 import { Navigate } from 'react-router-dom';
 import BillingPage from './Routes/billingpage';
-import GetStarted from './Routes/GetStarted';
 
+
+import Footer from './Home_Base/Footer';
+import Fitness from './Home_Base/Fitness';
+import UnleashHell from './Routes/UnleashHell';
 
 
 function App() {
@@ -27,15 +28,15 @@ function App() {
        
         <Route path="/" element={<Home />} />
         <Route path="/signup" element={<BillingPage />} />
-        <Route path="/signup" element={<GetStarted />} />
+        
+        <Route path="/UnleashHell" element={<Fitness />} />
         
        
       </Routes>
 
    
-      <footer>
-        
-      </footer>
+       {/* Footer */}
+       <Footer />
     </div>
   );
 }

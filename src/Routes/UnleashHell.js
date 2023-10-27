@@ -1,10 +1,10 @@
 import React from 'react';
 
-function GetStarted() {
+function UnleashHell() {
   return (
     <iframe
       //src="http://localhost:4000/static/Billing/billing.html"
-      title="GetStarted"
+      title="UnleashHell"
       width="100%"
       height="600"
       frameBorder="0"
@@ -12,4 +12,4 @@ function GetStarted() {
   );
 }
 
-export default GetStarted;
+export default UnleashHell;
