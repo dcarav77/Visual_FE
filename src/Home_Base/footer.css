@@ -47,3 +47,67 @@
     color: #ccc; /* Color for the links below headings */
   }
   
+  /* fitness.css */
+
+/* Style the navigation in the header */
+header nav {
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+}
+
+/* Style the navigation links */
+header nav a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  margin: 0 20px;
+  font-size: 18px;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+/* Style the main content section */
+section {
+  padding: 20px;
+  background-color: #f0f0f0;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  margin: 50px;
+  text-align: center;
+}
+
+/* Style the membership details */
+article ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+article li {
+  font-size: 16px;
+  margin: 10px 0;
+  color: #666;
+}
+
+/* Style the image container */
+aside .image-container {
+  text-align: center;
+}
+
+aside .membership-image {
+  display: block;
+  margin: 10px auto;
+  max-width: 100%; /* Ensure the image fits within its container */
+}
+
+/* Background color for the article */
+article {
+  background-color: #e0e0e0; /* Background color for the article */
+}
+
+/* Background color for the aside */
+aside {
+  background-color: #d0d0d0; /* Background color for the aside */
+}

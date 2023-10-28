@@ -1,5 +1,5 @@
+import { Routes, Route, useLocation } from 'react-router-dom';
 import React from 'react';
-import { Routes, Route } from 'react-router-dom';
 import GetRequest from './API/fetchPlaceholder';
 
 import Home from './Home_Base/Home.js';
@@ -15,23 +15,29 @@ import Header from './Home_Base/Header';
 
 
 function App() {
+  
+  const location = useLocation();
+  const renderHeader = location.pathname !== '/signup';
+  
+  
   return (
     <div className="App">
       {/* Your common layout or navigation components */}
       
       <header>
-      <Header />
+      
         
         <GetRequest />
       
       </header>
 
-      {/* Define your routes using Routes and Route components */}
+      <Header />
+
+    
       <Routes>
        
         <Route path="/" element={<Home />} />
         <Route path="/signup" element={<BillingPage />} />
-        
         <Route path="/UnleashHell" element={<Fitness />} />
         
        

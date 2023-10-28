@@ -8,9 +8,20 @@
   .hero {
     background-image: url('/Users/dustin_caravaglia/Desktop/pics 4 fitness/ohb.png');
     background-size: cover;
+    background-position: center top;
     color: #fff;
-    padding: 240px 0;
+    padding: 360px 0;
   }
+
+  /* Hero Section */
+.hero {
+  background-image: url('/Users/dustin_caravaglia/Desktop/pics 4 fitness/ohb.png');
+  background-size: cover;
+  background-attachment: fixed; 
+  color: #fff;
+  padding: 360px 0;
+}
+
   
   .hero h1 {
     font-size: 36px;
@@ -63,10 +74,11 @@
   }
   
   .feature img {
-    width: 80px;
-    height: 80px;
+    width: 300px; /* Adjust the width to your desired size */
+    height: 300px; /* Adjust the height to your desired size */
     margin-bottom: 10px;
-  }
+}
+
   
   /* Testimonials */
   .testimonials {
@@ -95,3 +107,8 @@
     margin-bottom: 20px;
   }
   
+  body.hide-header header {
+    display: none;
+  }
+
+ 

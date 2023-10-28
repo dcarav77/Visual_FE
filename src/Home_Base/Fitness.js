@@ -4,27 +4,35 @@ import { useNavigate } from 'react-router-dom';
 
 function Fitness() {
   const navigate = useNavigate();
-  
+
   return (
     <div className="Fitness">
-    
       <header>
-       
+        <nav>
+          {/* Your navigation content goes here */}
+        </nav>
       </header>
 
-      <h2>Your Membership Includes...</h2>
-      <ul>
-        <li>12 WEEKS OF DIRECT PERSONAL COACHING WITH WES WATSON (month-to-month option available)</li>
-        <li>CUSTOM NUTRITION BREAKDOWN & MEAL CHEAT SHEET SPECIFIC TO YOUR BODY</li>
-        <li>WORKOUT CALENDAR & VIDEO GUIDED WORKOUTS</li>
-        <li>2x WEEKLY ACCOUNTABILITY LIVE CHECK-IN CALLS</li>
-        <li>24/7 SUPPORT ON MY PRIVATE APP</li>
-        <li>ACCESS TO PRIVATE ACCOUNTABILITY APP TO CONNECT WITH OTHER PEOPLE ON THE SAME JOURNEY OF GROWTH.</li>
-      </ul>
+      <section>
+        <h2>Your Membership Includes...</h2>
+        <article>
+          <ul>
+            <li>12 weeks of one-on-one coaching directly with Dustin Caravaglia, with the option for a month-to-month commitment</li>
+            <li>CUSTOM NUTRITION BREAKDOWN & MEAL CHEAT SHEET SPECIFIC TO YOUR BODY</li>
+            <li>Workout Calendar</li>
+            <li>2x WEEKLY ACCOUNTABILITY LIVE CHECK-IN CALLS</li>
+            <li>Q&A Sessions- "How do I handle family members who encourage me to drink?"  </li>
+            <li>Access 24/7 support through our exclusive private app</li>
+            <li>Connect with like-minded individuals on a shared growth journey through our private accountability app.</li>
+          </ul>
+        </article>
+      </section>
 
-      <div className="image-container">
-        <img src="../images/abbs.jpeg" alt="Abbs" className="membership-image" />
-      </div>
+      <aside>
+        <div className="image-container">
+          <img src="../images/abbs.jpeg" alt="Abbs" className="membership-image" />
+        </div>
+      </aside>
     </div>
   );
 }

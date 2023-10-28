@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './home.css'
 import { useNavigate } from 'react-router-dom';
 import { Navigate } from 'react-router-dom';
@@ -6,6 +6,17 @@ import { Navigate } from 'react-router-dom';
 
 function Home() {
   const navigate = useNavigate();
+  
+  useEffect(() => {
+
+    document.body.classList.add('hide-header');
+    return () => {
+      
+      document.body.classList.remove('hide-header');
+    };
+  }, []);
+  
+  
   return (
     <div className="Home">
       {/* Hero Section */}
@@ -23,15 +34,17 @@ function Home() {
 
       {/* Features */}
       <section className="features">
-        <h2>Key Features</h2>
+        <h2>Who the fuck am I???</h2>
         {/* Feature 1 */}
         <div className="feature">
-          <img src="feature-icon-1.png" alt="Feature 1" />
-          <p>Track your workouts and progress.</p>
+          <img src="/images/bigsmall.png" alt="Feature 1" />
+          
+          <p>Alcoholic to Workaholic</p>
+          <p>Former NCAA Wrestler / Special Operations soldier hits rock bottom </p>
         </div>
         {/* Feature 2 */}
         <div className="feature">
-          <img src="feature-icon-2.png" alt="Feature 2" />
+          <img src="/images/merangeredit.png" alt="Feature 2" />
           <p>Access a variety of fitness programs.</p>
         </div>
         {/* Add more features here */}
@@ -39,10 +52,10 @@ function Home() {
 
       {/* Testimonials */}
       <section className="testimonials">
-        <h2>What Our Users Say</h2>
+        <h2>I NEED A DRINK, I NEED A BREAK, I NEED TO RELAX!</h2>
         {/* Testimonial 1 */}
         <div className="testimonial">
-          <p>"This app changed my life! I've never felt better."</p>
+          <p>"Do you see the pattern here"</p>
           <p>- John Doe</p>
         </div>
         {/* Add more testimonials here */}
