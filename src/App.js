@@ -4,12 +4,12 @@ import GetRequest from './API/fetchPlaceholder';
 
 import Home from './Home_Base/Home.js';
 import { Navigate } from 'react-router-dom';
-import BillingPage from './Routes/billingpage';
+import BillingPage from './Hooks/billingpage';
 
 
 import Footer from './Home_Base/Footer';
 import Fitness from './Home_Base/Fitness';
-import UnleashHell from './Routes/UnleashHell';
+import UnleashHell from './Hooks/UnleashHell';
 
 import Header from './Home_Base/Header';
 

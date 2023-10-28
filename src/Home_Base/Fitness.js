@@ -14,19 +14,33 @@ function Fitness() {
       </header>
 
       <section>
-        <h2>Your Membership Includes...</h2>
-        <article>
-          <ul>
-            <li>12 weeks of one-on-one coaching directly with Dustin Caravaglia, with the option for a month-to-month commitment</li>
-            <li>CUSTOM NUTRITION BREAKDOWN & MEAL CHEAT SHEET SPECIFIC TO YOUR BODY</li>
-            <li>Workout Calendar</li>
-            <li>2x WEEKLY ACCOUNTABILITY LIVE CHECK-IN CALLS</li>
-            <li>Q&A Sessions- "How do I handle family members who encourage me to drink?"  </li>
-            <li>Access 24/7 support through our exclusive private app</li>
-            <li>Connect with like-minded individuals on a shared growth journey through our private accountability app.</li>
-          </ul>
-        </article>
-      </section>
+  <h2>Your Membership Includes...</h2>
+  <article>
+    <ul>
+      <li>
+       
+        <h3>12 weeks of one-on-one coaching directly with Coach C </h3>
+        <p>Option for a month-to-month commitment</p>
+        <h3>Custom Nutrition Breakdown & Meal Cheat Sheet Specific to your Body</h3>
+      </li>
+      <li>
+      
+        <p>Workout Calendar</p>
+      </li>
+      <li>
+ 
+        <h3>2x Weekly 60+Min Video Calls </h3>
+        <p>Q&A Sessions - "How do I handle family & friends who want me to drink?"</p>
+      </li>
+      <li>
+       
+        <h3>Access 24/7 support through our exclusive private app</h3>
+        <p>Connect with like-minded individuals on a shared growth journey through our private accountability app</p>
+      </li>
+    </ul>
+  </article>
+</section>
+
 
       <aside>
         <div className="image-container">

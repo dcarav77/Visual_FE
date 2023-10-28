@@ -28,35 +28,38 @@ function Home() {
 
       {/* About Us */}
       <section className="about">
-        <h2>Invest in Yourself</h2>
-        <p>If you’re ready to dominate every area of life, choose your path below and let’s fuckin get it! There’s no better way to master something than to invest in training, a mentor, or coach that can give you the best strategies and principles to achieve your desired outcome in half the time it would take trying to figure it all out on your own.</p>
+        <h1>Invest in Yourself</h1>
+        <p>There’s no better way to master something than to invest in training, a mentor, or coach </p>
+        <p>I have spent the past year with one of the TOP Mindeset/Performance coaches around </p>
+        <p>You need that coaches voice in your head EVERYDAY</p>
       </section>
 
       {/* Features */}
       <section className="features">
-        <h2>Who the fuck am I???</h2>
+        <h2>I don't know WHO you ARE??</h2>
         {/* Feature 1 */}
         <div className="feature">
           <img src="/images/bigsmall.png" alt="Feature 1" />
           
-          <p>Alcoholic to Workaholic</p>
-          <p>Former NCAA Wrestler / Special Operations soldier hits rock bottom </p>
+          <h3>Alcoholic to Workaholic</h3>
+          <p>Former NCAA Wrestler / Special Operations soldier HIT ROCK BOTTOM </p>
         </div>
         {/* Feature 2 */}
         <div className="feature">
           <img src="/images/merangeredit.png" alt="Feature 2" />
-          <p>Access a variety of fitness programs.</p>
+          <p>5+ Years Sober</p>
+          <p>Elite STRENGH - SPEED - STAMINA</p>
         </div>
-        {/* Add more features here */}
+       
       </section>
 
       {/* Testimonials */}
-      <section className="testimonials">
-        <h2>I NEED A DRINK, I NEED A BREAK, I NEED TO RELAX!</h2>
-        {/* Testimonial 1 */}
-        <div className="testimonial">
-          <p>"Do you see the pattern here"</p>
-          <p>- John Doe</p>
+      <section className="testimonials testimonial-background">
+        <h2>I Need a Drink, I need a Break, I Need to Relax!</h2>
+        <div className="testimonial" style={{ marginTop: '330px' }}>
+          <h3>FRAT BOYS!</h3>
+          <p>It's NOT about what you WANT to do</p>
+          <p>It's what you HAVE to do</p>
         </div>
         {/* Add more testimonials here */}
       </section>

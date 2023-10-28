@@ -5,7 +5,7 @@
     border: 1px solid #ccc;
     border-radius: 5px;
     margin: 20px;
-    text-align: center; /* Center text horizontally within the container */
+    text-align: left;
   }
   
   /* Style the heading */
@@ -18,6 +18,8 @@
   .Fitness ul {
     list-style-type: disc;
     margin-left: 20px;
+    text-align: left;
+    padding-left: 0;
   }
   
   /* Style list items */
@@ -33,16 +35,5 @@
     display: block;
     margin: 10px auto; /* Center the image horizontally below the list item text */
     max-width: 25%; /* Limit the image width to 25% of the container */
-  }
-  
-  /* Add a class for the black horizontal bar */
-.black-horizontal-bar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 10%;
-    background-color: black;
-    z-index: 1;
   }
   
