@@ -11,6 +11,8 @@ import Footer from './Home_Base/Footer';
 import Fitness from './Home_Base/Fitness';
 import UnleashHell from './Routes/UnleashHell';
 
+import Header from './Home_Base/Header';
+
 
 function App() {
   return (
@@ -18,6 +20,7 @@ function App() {
       {/* Your common layout or navigation components */}
       
       <header>
+      <Header />
         
         <GetRequest />
       

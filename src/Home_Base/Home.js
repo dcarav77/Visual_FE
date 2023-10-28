@@ -17,8 +17,8 @@ function Home() {
 
       {/* About Us */}
       <section className="about">
-        <h2>Comfort is Killing You</h2>
-        <p>Alcohol - Food - Video Games</p>
+        <h2>Invest in Yourself</h2>
+        <p>If you’re ready to dominate every area of life, choose your path below and let’s fuckin get it! There’s no better way to master something than to invest in training, a mentor, or coach that can give you the best strategies and principles to achieve your desired outcome in half the time it would take trying to figure it all out on your own.</p>
       </section>
 
       {/* Features */}

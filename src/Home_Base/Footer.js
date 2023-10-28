@@ -23,7 +23,6 @@ function Footer() {
         <div className="footer-column">
           <h3 className="footer-heading">Social Media</h3>
           <ul className="footer-list">
-            <li className="footer-list-item"><a href="#">Facebook</a></li>
             <li className="footer-list-item"><a href="#">Instagram</a></li>
             <li className="footer-list-item"><a href="#">Youtube</a></li>
             <li className="footer-list-item"><a href="#">Twitter</a></li>

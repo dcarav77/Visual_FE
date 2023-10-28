@@ -6,10 +6,10 @@
   
   /* Hero Section */
   .hero {
-    background-image: url('/Users/dustin_caravaglia/Desktop/ohb.png');
+    background-image: url('/Users/dustin_caravaglia/Desktop/pics 4 fitness/ohb.png');
     background-size: cover;
     color: #fff;
-    padding: 300px 0;
+    padding: 240px 0;
   }
   
   .hero h1 {
@@ -32,7 +32,7 @@
   }
   
   .cta-button:hover {
-    background-color: #b3008f;
+    background-color: #48b300;
   }
   
   /* About Us */
