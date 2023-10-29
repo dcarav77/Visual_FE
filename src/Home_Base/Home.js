@@ -30,38 +30,36 @@ function Home() {
       <section className="about">
         <h1>Invest in Yourself</h1>
         <p>There’s no better way to master something than to invest in training, a mentor, or coach </p>
-        <p>I have spent the past year with one of the TOP Mindeset/Performance coaches around </p>
-        <p>You need that coaches voice in your head EVERYDAY</p>
+        <p>I have spent the past year TRAINING with one of the TOP Mindeset/Performance coaches</p>
+        <p>A coach should NOT make decisions for you, they keep you from making BAD ones </p>
       </section>
 
-      {/* Features */}
+      {/* Feature 1 */}
       <section className="features">
-        <h2>I don't know WHO you ARE??</h2>
-        {/* Feature 1 */}
+        <h2>Sick of being DRUNK, & seeking a real CONNECTION?</h2>
         <div className="feature">
-          <img src="/images/bigsmall.png" alt="Feature 1" />
-          
-          <h3>Alcoholic to Workaholic</h3>
-          <p>Former NCAA Wrestler / Special Operations soldier HIT ROCK BOTTOM </p>
+          <img src="/images/drunkgreen.jpeg" alt="Feature 1"  class="feature-image-1" />
+          <h3>Alcoholic, Pleasure Seeker</h3>
+          <p>Bagging Groceries - Living in a Double Wide Trailer - Drinking my Life away </p>
         </div>
         {/* Feature 2 */}
         <div className="feature">
-          <img src="/images/merangeredit.png" alt="Feature 2" />
-          <p>5+ Years Sober</p>
-          <p>Elite STRENGH - SPEED - STAMINA</p>
+          <img src="/images/legs.jpeg" alt="Feature 2" class="feature-image-2" />
+          <p>5+ Years Later...</p>
+          <p>Founder and Chief Software Engineer at SaaS startup </p>
+          <p>Elite Strength - Speed - Stamina</p>
         </div>
        
       </section>
 
-      {/* Testimonials */}
       <section className="testimonials testimonial-background">
-        <h2>I Need a Drink, I need a Break, I Need to Relax!</h2>
-        <div className="testimonial" style={{ marginTop: '330px' }}>
+        <h2 style={{ marginLeft: '330px' }}>I Need a Drink, I need a Break, I Need to Relax!</h2>
+        <div className="testimonial" style={{ marginTop: '275px', width: '400px', height: '120px', marginLeft: '330px' }}>
           <h3>FRAT BOYS!</h3>
           <p>It's NOT about what you WANT to do</p>
           <p>It's what you HAVE to do</p>
         </div>
-        {/* Add more testimonials here */}
+        
       </section>
 
       {/* Download/Signup CTA */}

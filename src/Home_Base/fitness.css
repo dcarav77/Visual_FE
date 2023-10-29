@@ -1,39 +1,98 @@
 /* Style the container */
 .Fitness {
-    background-color: #f0f0f0;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin: 20px;
-    text-align: left;
-  }
-  
-  /* Style the heading */
-  .Fitness h2 {
-    font-size: 24px;
-    color: #333;
-  }
-  
-  /* Style the list */
-  .Fitness ul {
-    list-style-type: disc;
-    margin-left: 20px;
-    text-align: left;
-    padding-left: 0;
-  }
-  
-  /* Style list items */
-  .Fitness li {
-    font-size: 16px;
-    margin: 10px 0;
-    color: #666;
-    position: relative; /* Position the image relative to the list item */
-  }
-  
-  /* Style the image */
-  .Fitness .membership-image {
-    display: block;
-    margin: 10px auto; /* Center the image horizontally below the list item text */
-    max-width: 25%; /* Limit the image width to 25% of the container */
-  }
-  
+  background-color:steelblue;
+  padding: 20px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  margin: 20px;
+  text-align: left;
+}
+
+/* Style the heading */
+.Fitness h2 {
+  font-size: 30px;
+  color: #333;
+  font-weight: bold;
+}
+
+.Fitness .custom-list {
+  list-style-type: none;
+  margin-left: 0;
+  text-align: left;
+  padding-left: 0;
+  margin: 0; 
+  padding: 0;
+}
+
+/* Style list items */
+.Fitness .list-item {
+  margin: 0;
+  color: black;
+  font-weight: bold;
+  position: relative;
+  background-color: white;
+}
+
+/* Add checkmarks */
+.Fitness .list-item::before {
+  content: "✔";
+  color: #48b300;
+  font-size: 20px;
+  margin-right: 10px;
+  position: absolute;
+  left: -25px; 
+  top: 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* Style the image */
+.Fitness .membership-image {
+  display: block;
+  margin: 10px auto;
+  max-width: 25%;
+}
+section {
+  background-color: white;
+}
+
+.membership-options {
+  display: flex;
+  justify-content: space-between;
+}
+
+.membership-option {
+  padding: 20px;
+  border-radius: 5px;
+  flex: 1;
+  text-align: center;
+  border: 1px solid #c03a3a;
+  margin: 0 5px; 
+}
+
+.membership-option h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.membership-option p {
+  font-size: 18px;
+}
+
+/* Style only the "Monthly" container */
+.membership-option:nth-child(1) {
+  background-color: rgb(14, 2, 2);
+  color: white;
+}
+
+.membership-option:nth-child(2) {
+  background-color: rgb(52, 16, 232);
+  color: white;
+}
+/* Style the image */
+.Fitness .membership-image {
+  display: block;
+  margin: 10px auto;
+  max-width: 70%; /* Adjust the value as needed to control the image size */
+}
