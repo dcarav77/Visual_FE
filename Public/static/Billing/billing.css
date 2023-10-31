@@ -66,6 +66,10 @@ th, td {
   margin-top: 5px;
 }
 
+.billing-information {
+  margin-top: 90px; /* Adjust the margin-top as needed for spacing */
+}
+
 /* Style the zip code input field */
 .zip-code input {
   width: 100%;

@@ -1,83 +1,48 @@
 /* Style the container */
 .Fitness {
-  background-color:steelblue;
-  padding: 20px;
-  border: 1px solid #cccccc;
+  background-color: steelblue;
+  padding: 150px;
+  border: 1px solid #3aaa26;
   border-radius: 5px;
   margin: 20px;
-  text-align: left;
 }
 
-/* Style the heading */
-.Fitness h2 {
-  font-size: 30px;
-  color: #333;
-  font-weight: bold;
+.Fitness ul {
+  list-style-type: none; 
+  
 }
 
-.Fitness .custom-list {
-  list-style-type: none;
-  margin-left: 0;
-  text-align: left;
-  padding-left: 0;
-  margin: 0; 
-  padding: 0;
+.Fitness li {
+  margin: 50px 0; 
 }
 
-/* Style list items */
+/* Style list items in the first section */
 .Fitness .list-item {
   margin: 0;
   color: black;
   font-weight: bold;
   position: relative;
   background-color: white;
+  display: flex; 
+  align-items: flex-start;
+  font-size: 24px; 
 }
 
-/* Add checkmarks */
-.Fitness .list-item::before {
-  content: "✔";
-  color: #48b300;
-  font-size: 20px;
-  margin-right: 10px;
-  position: absolute;
-  left: -25px; 
-  top: 0;
-  display: inline-block;
-  vertical-align: middle;
-}
-
-/* Style the image */
-.Fitness .membership-image {
-  display: block;
-  margin: 10px auto;
-  max-width: 25%;
-}
-section {
-  background-color: white;
-}
 
 .membership-options {
   display: flex;
   justify-content: space-between;
 }
 
+/* prices */
 .membership-option {
   padding: 20px;
   border-radius: 5px;
   flex: 1;
   text-align: center;
-  border: 1px solid #c03a3a;
-  margin: 0 5px; 
-}
-
-.membership-option h3 {
-  font-size: 20px;
-  margin-bottom: 10px;
-  font-weight: bold;
-}
-
-.membership-option p {
-  font-size: 18px;
+  border: 1px solid #0e0d0d;
+  margin: 0 5px;
+  font-size: 24px; 
 }
 
 /* Style only the "Monthly" container */
@@ -90,9 +55,9 @@ section {
   background-color: rgb(52, 16, 232);
   color: white;
 }
-/* Style the image */
+/* my back */
 .Fitness .membership-image {
   display: block;
   margin: 10px auto;
-  max-width: 70%; /* Adjust the value as needed to control the image size */
+  max-width: 80%; 
 }

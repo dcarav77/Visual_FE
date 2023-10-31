@@ -11,36 +11,46 @@ function Fitness() {
       
       </header>
 
-<section>
+      <section className="membership">
   <h2>Your Membership Includes...</h2>
-  <article>
-    <ul class="custom-list">
-      <li>
-        <div class="list-item">
-          <h3>12 weeks of one-on-one coaching directly with Coach C</h3>
-          <p>Option for a month-to-month commitment</p>
-        </div>
-      </li>
-      <li>
-        <div class="list-item">
-          <h3>Custom Nutrition Breakdown & Meal Cheat Sheet Specific to your Body</h3>
-          <p>Workout Calendar</p>
-        </div>
-      </li>
-      <li>
-        <div class="list-item">
+  <ul className="custom-list">
+    <li>
+      <div className="list-item">
+        <span className="checkmark">✔</span>
+        <div className="list-content">
+          
           <h3>2x Weekly 60+Min Video Calls</h3>
           <p>Q&A Sessions - "How do I handle family & friends who want me to drink?"</p>
         </div>
-      </li>
-      <li>
-        <div class="list-item">
+      </div>
+    </li>
+    <li>
+      <div className="list-item">
+        <span className="checkmark">✔</span>
+        <div className="list-content">
+          <h3>Custom made meal plan, specific to your body</h3>
+          <p>No more guesswork, Macronutrients made simple </p>
+        </div>
+      </div>
+    </li>
+    <li>
+      <div className="list-item">
+        <span className="checkmark">✔</span>
+        <div className="list-content">
+        <h3>Proven Fitness Guidance from a NCAA Wrestler and Special Operations Vet  </h3>
+        </div>
+      </div>
+    </li>
+    <li>
+      <div className="list-item">
+        <span className="checkmark">✔</span>
+        <div className="list-content">
           <h3>Access 24/7 support through our exclusive private app</h3>
           <p>Connect with like-minded individuals on a shared growth journey through our private accountability app</p>
         </div>
-      </li>
-    </ul>
-  </article>
+      </div>
+    </li>
+  </ul>
 </section>
 
 <section className="features">

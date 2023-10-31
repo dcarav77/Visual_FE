@@ -9,8 +9,8 @@ function Footer() {
     <div className="footer-container">
       <footer className="footer">
         <div className="footer-content">
-          <p className="footer-text">Help men lose weight & free themselves from the things that hold them back from self-respect & growth.</p>
-          <p className="footer-text">&copy; Copyright 2021 - All rights are reserved.</p>
+          <h2 className="footer-text">GET SOBER, GET LEAN, GET YOUR LIFE BACK</h2>
+          <p className="footer-text">&copy; Copyright 2023 - All rights are reserved.</p>
           <p className="footer-text">Created by Strong all Along</p>
         </div>
         <div className="footer-column">

@@ -7,6 +7,14 @@
     <link rel="stylesheet" href="billing.css">
 </head>
 <body>
+
+    <div class="subscription-options">
+        <label for="subscription">Choose Subscription:</label>
+        <select id="subscription" name="subscription">
+            <option value="1month">1 month x $299</option>
+            <option value="3months">3 months x $750</option>
+        </select>
+    </div>
     
         <h2>CART CONTENTS:</h2>
         <table>
@@ -20,6 +28,10 @@
                 <!-- Add rows for cart items dynamically using JavaScript -->
               </tbody>
         </table>
+
+        <div class="payment-details billing-information">
+            <!-- Your billing information form -->
+        </div>
         
          
         <div class="payment-details">

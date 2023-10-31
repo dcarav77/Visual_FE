@@ -36,18 +36,20 @@ function Home() {
 
       {/* Feature 1 */}
       <section className="features">
-        <h2>Sick of being DRUNK, & seeking a real CONNECTION?</h2>
+        <h2>Sick of being DRUNK??</h2>
+        <h2>Seeking a Connection...</h2>
         <div className="feature">
           <img src="/images/drunkgreen.jpeg" alt="Feature 1"  class="feature-image-1" />
-          <h3>Alcoholic, Pleasure Seeker</h3>
-          <p>Bagging Groceries - Living in a Double Wide Trailer - Drinking my Life away </p>
+          <h3>I was an Alcoholic, Pleasure Seeker</h3>
+          <p>Bagging Groceries - Living in a Double Wide Trailer - Looking for LOVE in a BAR! </p>
         </div>
         {/* Feature 2 */}
         <div className="feature">
           <img src="/images/legs.jpeg" alt="Feature 2" class="feature-image-2" />
-          <p>5+ Years Later...</p>
-          <p>Founder and Chief Software Engineer at SaaS startup </p>
-          <p>Elite Strength - Speed - Stamina</p>
+          <h2>5+ Years Later...</h2>
+          <h3>No Alchol or Drugs</h3>
+          <h4>Founder - Chief Software Engineer Startup </h4>
+          <h4>Elite Strength - Speed - Stamina</h4>
         </div>
        
       </section>
