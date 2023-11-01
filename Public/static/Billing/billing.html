@@ -80,10 +80,8 @@
             
             <div class="form-group">
                 <label for="state">State</label>
-                <select id="state" name="state" class="shorter-input">
-                    <option value="CA">California</option>
-                    <option value="NY">New York</option>
-                    <!-- Add more states as needed -->
+                <input type="text" id="State" name="State" class="shorter-input">
+                  
                 </select>
             </div>
             
@@ -124,8 +122,6 @@
     </div>
 
     <script>
-        const subscriptionDropdown = document.getElementById("subscription");
-        subscriptionDropdown.addEventListener("change", updateCartContents);
         
         function updateCartContents() {
             const subscriptionDropdown = document.getElementById("subscription");
@@ -154,6 +150,15 @@
             // Append the new row to the cart table
             cartTable.appendChild(newRow);
         }
+
+          // Automatically load cart contents on page load
+            updateCartContents();
+
+            // Add event listener to the subscription dropdown
+            const subscriptionDropdown = document.getElementById("subscription");
+            subscriptionDropdown.addEventListener("change", updateCartContents);
+</script>
+  
     </script>
 </body>
 </html>
