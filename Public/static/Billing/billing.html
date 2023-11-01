@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="billing.css">
 </head>
 <body>
-
     <div class="subscription-options">
         <label for="subscription">Choose Subscription:</label>
         <select id="subscription" name="subscription">
@@ -15,104 +14,146 @@
             <option value="3months">3 months x $750</option>
         </select>
     </div>
-    
-        <h2>CART CONTENTS:</h2>
-        <table>
-            <tbody>
-                <tr class="table-header">
-                  <th>Qty</th>
-                  <th>Item Description</th>
-                  <th>Price</th>
-                  <th>Total</th>
-                </tr>
-                <!-- Add rows for cart items dynamically using JavaScript -->
-              </tbody>
-        </table>
 
-        <div class="payment-details billing-information">
-            <!-- Your billing information form -->
-        </div>
-        
-         
-        <div class="payment-details">
-            <h2>BILLING INFORMATION:</h2>
-            <form>
-                <!-- Billing information -->
-                <div class="form-group">
-                    <label for="country">Country</label>
-                    <select id="country" name="country" class="shorter-input">
-                        <option value="United States">United States</option>
-                        <option value="Canada">Canada</option>
-                        <!-- Add more countries as needed -->
-                    </select>
+    <h2>CART CONTENTS:</h2>
+    <table class="cart-table"> <!-- Added class="cart-table" to the table -->
+        <thead>
+            <tr class="table-header">
+                <th>Item Description</th>
+                <th>Price</th>
+                <th>Total</th>
+            </tr>
+            <tbody id="cart-item">
+             
+        </tbody>
+    </table>
+
+    <div class="payment-details">
+        <h2>BILLING INFORMATION:</h2>
+        <form>
+            <!-- Billing information -->
+            <div class="form-group">
+                <label for="country">Country</label>
+                <input type="text" id="country" name="country" class="shorter-input">       
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstName" class="shorter-input">
+            </div>
+            
+            <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastName" class="shorter-input">
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" class="shorter-input">
+            </div>
+            
+            <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" class="shorter-input">
+            </div>
+            
+            <div class="form-group">
+                <label for="address1">Address 1</label>
+                <input type="text" id="address1" name="address1" class="shorter-input">
+            </div>
+            
+            <div class="form-group">
+                <label for="address2">Address 2</label>
+                <input type="text" id="address2" name="address2" class="shorter-input">
+            </div>
+            
+            <div class="form-group">
+                <label for="zip">Zip</label>
+                <input type="text" id="zip" name="zip" class="shorter-input">
+            </div>
+            
+            <div class="form-group">
+                <label for="city">City</label>
+                <input type="text" id="city" name="city" class="shorter-input">
+            </div>
+            
+            <div class="form-group">
+                <label for="state">State</label>
+                <select id="state" name="state" class="shorter-input">
+                    <option value="CA">California</option>
+                    <option value="NY">New York</option>
+                    <!-- Add more states as needed -->
+                </select>
+            </div>
+            
+            <!-- Payment information -->
+            <div class="form-group">
+                <label for="paymentMethod">Payment Information</label>
+                <div class="credit-card-input">
+                    <input type="text" id="creditCardNumber" name="creditCardNumber" placeholder="Card Number" class="shorter-input">
                 </div>
-                
-                <div class="form-group">
-                    <label for="firstName">First Name</label>
-                    <input type="text" id="firstName" name="firstName" class="shorter-input">
-                </div>
-                
-                <div class="form-group">
-                    <label for="lastName">Last Name</label>
-                    <input type="text" id="lastName" name="lastName" class="shorter-input">
-                </div>
-                
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" class="shorter-input">
-                </div>
-                
-                <div class="form-group">
-                    <label for="phone">Phone</label>
-                    <input type="tel" id="phone" name="phone" class="shorter-input">
-                </div>
-                
-                <div class="form-group">
-                    <label for="address1">Address 1</label>
-                    <input type="text" id="address1" name="address1" class="shorter-input">
-                </div>
-                
-                <div class="form-group">
-                    <label for="address2">Address 2</label>
-                    <input type="text" id="address2" name="address2" class="shorter-input">
-                </div>
-                
-                <div class="form-group">
-                    <label for="zip">Zip</label>
-                    <input type="text" id="zip" name="zip" class="shorter-input">
-                </div>
-                
-                <div class="form-group">
-                    <label for="city">City</label>
-                    <input type="text" id="city" name="city" class="shorter-input">
-                </div>
-                
-                <div class="form-group">
-                    <label for="state">State</label>
-                    <select id="state" name="state" class="shorter-input">
-                        <option value="CA">California</option>
-                        <option value="NY">New York</option>
-                        <!-- Add more states as needed -->
-                    </select>
-                </div>
-                
-                <!-- Payment information -->
-                <div class="form-group">
-                    <label for="paymentMethod">Payment Information</label>
-                    <div class="credit-card-input">
-                        <input type="text" id="creditCardNumber" name="creditCardNumber" placeholder="Card Number" class="shorter-input">
-                    </div>
-                </div>
-                
-                <!-- Additional payment fields can be added here -->
-                
-                <!-- Submit button -->
-                <div class="form-group">
-                    <button type="submit">Place Your Order</button>
-                </div>
-            </form>
-        </div>
+            </div>
+
+            <!-- Expiration Date -->
+            <div class="half-input">
+                <label for="expirationDate">Expiration Date (MM/YY):</label>
+                <input type="text" id="expirationDate" name="expirationDate" placeholder="MM/YY" class="shorter-input">
+            </div>
+
+            <!-- CVC (Card Verification Code) -->
+            <div class="half-input">
+                <label for="cvc">CVC:</label>
+                <input type="text" id="cvc" name="cvc" placeholder="CVC" class="shorter-input">
+            </div>
+
+            <!-- Billing ZIP Code -->
+            <div class="half-input">
+                <label for="billingZip">Billing ZIP Code:</label>
+                <input type="text" id="billingZip" name="billingZip" placeholder="Billing ZIP Code" class="shorter-input">
+            </div>
+            
+            
+            <!-- Submit button -->
+            <div class="form-group">
+                <button type="submit">Place Your Order</button>
+            </div>
+        </form>
+           
+        </form>
     </div>
-</body>
 
+    <script>
+        const subscriptionDropdown = document.getElementById("subscription");
+        subscriptionDropdown.addEventListener("change", updateCartContents);
+        
+        function updateCartContents() {
+            const subscriptionDropdown = document.getElementById("subscription");
+            const cartTable = document.querySelector(".cart-table tbody");
+
+            // Clear existing rows
+            cartTable.innerHTML = "";
+
+            // Get the selected subscription option
+            const selectedOption = subscriptionDropdown.options[subscriptionDropdown.selectedIndex];
+
+            // Extract the subscription details (e.g., "1 month x $299")
+            const subscriptionDetails = selectedOption.textContent.trim();
+
+            // Parse the price from the subscription details
+            const price = parseFloat(subscriptionDetails.match(/\$\d+/)[0].substring(1));
+
+            // Create a new row for the cart table
+            const newRow = document.createElement("tr");
+            newRow.innerHTML = `
+                <td>${subscriptionDetails}</td>
+                <td>$${price.toFixed(2)}</td>
+                <td>$${price.toFixed(2)}</td>
+            `;
+
+            // Append the new row to the cart table
+            cartTable.appendChild(newRow);
+        }
+    </script>
+</body>
 </html>

@@ -19,7 +19,7 @@ function Fitness() {
         <span className="checkmark">✔</span>
         <div className="list-content">
           
-          <h3>2x Weekly 60+Min Video Calls</h3>
+          <h3>2x Weekly 60+ Minute Video Calls</h3>
           <p>Q&A Sessions - "How do I handle family & friends who want me to drink?"</p>
         </div>
       </div>
@@ -37,7 +37,7 @@ function Fitness() {
       <div className="list-item">
         <span className="checkmark">✔</span>
         <div className="list-content">
-        <h3>Proven Fitness Guidance from a NCAA Wrestler and Special Operations Vet  </h3>
+        <h3>Proven Fitness Guidance from an NCAA Wrestler and Special Operations Vet  </h3>
         </div>
       </div>
     </li>
@@ -45,7 +45,7 @@ function Fitness() {
       <div className="list-item">
         <span className="checkmark">✔</span>
         <div className="list-content">
-          <h3>Access 24/7 support through our exclusive private app</h3>
+          <h3>Access 24/7 support through the exclusive private app</h3>
           <p>Connect with like-minded individuals on a shared growth journey through our private accountability app</p>
         </div>
       </div>

@@ -11,6 +11,7 @@ body, html {
   height: 100%;
 }
 
+/* Layout and Container Styles */
 .outer-container {
   display: flex;
   justify-content: center; /* Center the content horizontally */
@@ -20,28 +21,19 @@ body, html {
   border-right: 1px solid #ccc; /* Add a right border */
 }
 
-/* Style the billing container */
-.billing-container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  min-height: 100%;
-}
 
-/* Style headings */
+/* Typography Styles */
 h1, h2 {
   font-size: 20px; /* Apply a consistent font size */
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
-/* Style the cart contents table */
+/* Table Styles */
 table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 10px;
-  font-size: 16px; 
+  font-size: 16px;
   border: 1px solid #ccc;
   table-layout: fixed;
 }
@@ -50,27 +42,17 @@ th, td {
   padding: 10px;
   text-align: left;
   border: 1px solid #ccc;
-  width: 20%; 
+  width: 20%;
   font-size: 14px;
 }
 
-/* Style the subtotal and taxes */
+/* Subtotal and Taxes Styles */
 .subtotal {
   font-weight: bold;
   margin-top: 10px;
 }
 
-.taxes {
-  font-size: 12px;
-  color: #888;
-  margin-top: 5px;
-}
-
-.billing-information {
-  margin-top: 90px; /* Adjust the margin-top as needed for spacing */
-}
-
-/* Style the zip code input field */
+/* Zip Code Input Styles */
 .zip-code input {
   width: 100%;
   padding: 5px;
@@ -79,28 +61,28 @@ th, td {
   font-size: 16px; /* Apply a consistent font size */
 }
 
-/* Style the form groups */
+/* Form Group Styles */
 .form-group {
   margin-bottom: 10px;
 }
 
-/* Style labels */
+/* Label Styles */
 label {
   font-weight: bold;
 }
 
-/* Style form inputs and selects */
+/* Form Input and Select Styles */
 input[type="text"],
 input[type="email"],
 input[type="tel"],
 select {
   width: 100%;
   padding: 5px;
-  border: 1px solid #ccc;
+  border: 1px solid #cccccc;
   font-size: 16px; /* Apply a consistent font size */
 }
 
-/* Style the submit button */
+/* Place Your Order*/
 button[type="submit"] {
   padding: 10px;
   margin-top: 20px;
@@ -112,31 +94,31 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-  background-color: #0056b3;
+  background-color: #00b300;
 }
 
-/* Style the credit card input container */
+/* Credit Card Input Styles */
 .credit-card-input {
-  width: 100%;
+  width: 120%;
   border: 1px solid #ccc;
-  padding: 5px;
+  padding: 20px;
   position: relative;
 }
 
-/* Style the credit card input */
+/* Credit Card Input Field Styles */
 .credit-card-input input {
-  width: 100%;
+  width: 200%;
   border: none;
   outline: none;
-  font-size: 16px; /* Apply a consistent font size */
+  font-size: 19px; /* Apply a consistent font size */
 }
 
-/* Style the placeholder text */
+/* Placeholder Text Styles */
 .credit-card-input input::placeholder {
   color: #ccc;
 }
 
-/* Style the table header row */
+/* Table Header Row Styles */
 .table-header th {
   text-align: center; /* Center align the headings */
   background-color: #f0f0f0; /* Background color for the header row */
@@ -145,11 +127,15 @@ button[type="submit"]:hover {
   border: 1px solid #ccc; /* Add border styling */
 }
 
-/* Define the .shorter-input class */
+/* Shorter Input Class Styles */
 .shorter-input {
   width: 70% !important; /* Add !important to ensure it takes precedence */
+  font-size: 16px; /* Apply a consistent font size */
+  border: 1px solid #ccc;
+  padding: 5px;
 }
 
+/* This makes all the drop downs equal length horizontally */
 label {
   font-weight: bold;
   width: 110px; /* Change this to the desired label width */
@@ -157,35 +143,38 @@ label {
   margin-right: 5px; /* Adjust this margin as needed for spacing */
 }
 
-/* Style form inputs and selects */
-input[type="text"],
-input[type="email"],
-input[type="tel"],
-select,
-.shorter-input {
-  width: calc(100% - 160px);
+/* Expiration Date and CVC Input Styles */
+.half-input {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Center vertically */
+}
+
+.half-input {
+  width: calc(45% - 5px); /* Half the width minus margin */
+  margin-right: 10px; /* Adjust this margin as needed for spacing */
   padding: 5px;
   border: 1px solid #ccc;
-  font-size: 16px;
+  font-size: 16px; /* Apply a consistent font size */
 }
 
-/* Style the select elements */
-select {
-  width: calc(100% - 160px);
-}
-
-.shorter-input {
-  width: calc(70% - 160px) 
-}
-
-
-/* Style the table header row */
-.table-header th {
-  text-align: center;
-  background-color: #f0f0f0;
-  font-size: 18px;
-  padding: 10px;
+/* Billing ZIP Code Input Styles */
+#billingZip {
+  width: 100%;
+  padding: 5px;
+  margin-top: 10px;
   border: 1px solid #ccc;
+  font-size: 16px; /* Apply a consistent font size */
 }
+
+/* Expiration Date, CVC, and Billing ZIP Code Input Styles */
+.half-input {
+  width: calc(33.33% - 10px); /* One-third of the width minus margin */
+  margin-right: 10px; /* Adjust this margin as needed for spacing */
+  padding: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px; /* Apply a consistent font size */
+}
+
 
 

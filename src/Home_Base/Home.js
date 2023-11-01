@@ -28,10 +28,10 @@ function Home() {
 
       {/* About Us */}
       <section className="about">
-        <h1>Invest in Yourself</h1>
-        <p>There’s no better way to master something than to invest in training, a mentor, or coach </p>
-        <p>I have spent the past year TRAINING with one of the TOP Mindeset/Performance coaches</p>
-        <p>A coach should NOT make decisions for you, they keep you from making BAD ones </p>
+        <h1>Unlock Your Potential</h1>
+        <p>Discover the most effective path to mastery by investing in self-improvement through training, mentorship, or coaching. </p>
+        <p>I have dedicated myself to rigorous training under the guidance of a renowned Mindset/Performance coach.</p>
+        <p>A coach's role isn't to make decisions for you, but rather to safeguard you from making detrimental choices. </p>
       </section>
 
       {/* Feature 1 */}
@@ -48,7 +48,7 @@ function Home() {
           <img src="/images/legs.jpeg" alt="Feature 2" class="feature-image-2" />
           <h2>5+ Years Later...</h2>
           <h3>No Alchol or Drugs</h3>
-          <h4>Founder - Chief Software Engineer Startup </h4>
+          <h4>Founder & Chief Software Engineer  </h4>
           <h4>Elite Strength - Speed - Stamina</h4>
         </div>
        
@@ -66,7 +66,7 @@ function Home() {
 
       {/* Download/Signup CTA */}
       <section className="cta">
-        <h2>Ready to Get Started?</h2>
+        <h2>Get Sober, Get Lean, Get Your Life Back</h2>
         <button className="cta-button" onClick={() => navigate('/signup')}>  Sign Up Now </button>
 
       </section> 
