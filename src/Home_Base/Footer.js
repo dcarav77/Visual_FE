@@ -21,13 +21,14 @@ function Footer() {
           </ul>
         </div>
         <div className="footer-column">
-          <h3 className="footer-heading">Social Media</h3>
-          <ul className="footer-list">
-            <li className="footer-list-item"><a href="#">Instagram</a></li>
-            <li className="footer-list-item"><a href="#">Youtube</a></li>
-            <li className="footer-list-item"><a href="#">Twitter</a></li>
-          </ul>
-        </div>
+  <h3 className="footer-heading">Social Media</h3>
+  <ul className="footer-list">
+    <li className="footer-list-item"><a href="https://www.instagram.com/strong_all_along/">Instagram</a></li>
+    <li className="footer-list-item"><a href="https://www.youtube.com/channel/UCwMMGh3dRhbeZBmEgqAQEQg">Youtube</a></li>
+    <li className="footer-list-item"><a href="https://twitter.com/Coach_Dustin_C">Twitter</a></li>
+  </ul>
+</div>
+
         <div className="footer-column">
           <h3 className="footer-heading">Legal</h3>
           <ul className="footer-list">
