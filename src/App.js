@@ -4,7 +4,7 @@ import GetRequest from './API/fetchPlaceholder';
 
 import Home from './Home_Base/Home.js';
 import { Navigate } from 'react-router-dom';
-import BillingPage from './Hooks/billingpage';
+import BillingPage from './Home_Base/Bill';
 
 
 import Footer from './Home_Base/Footer';

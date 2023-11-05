@@ -6,7 +6,7 @@
   
   /* Hero Section */
   .hero {
-    background-image: url('/Users/dustin_caravaglia/Documents/repo/Visual_FE/Public/images/ohb.png');
+    background-image: url('/Users/dustin_caravaglia/Documents/repo/Visual_FE/public/images/ohb.png');
     background-size: cover;
     background-position: center top;
     color: #fff;
@@ -107,7 +107,7 @@
   }
 
   .testimonial-background {
-    background-image: url('/Users/dustin_caravaglia/Documents/repo/Visual_FE/Public/images/channelchanger.jpeg'); 
+    background-image: url('/Users/dustin_caravaglia/Documents/repo/Visual_FE/public/images/channelchanger.jpeg'); 
     background-size: cover; 
     background-position: center center; 
     background-repeat: no-repeat; 

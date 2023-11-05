@@ -1,24 +1,28 @@
 import React, { useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
-import { Navigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 
 function BillingPage() {
-
   const navigate = useNavigate();
+  const location = useLocation();
 
   useEffect(() => {
-    // Add a CSS class to hide the header when the component mounts
-    document.body.classList.add('hide-header');
-    
+    // Check if the current location is the /signup route
+    if (location.pathname === '/signup') {
+      // Add a CSS class to hide the header
+      document.body.classList.add('hide-header');
+    }
+
     // Remove the CSS class to show the header when the component unmounts
     return () => {
-      document.body.classList.remove('hide-header');
+      if (location.pathname === '/signup') {
+        document.body.classList.remove('hide-header');
+      }
     };
-  }, []);
+  }, [location.pathname]);
 
   return (
     <iframe
-      src="http://localhost:4000/static/Billing/billing.html"
+      src="/Users/dustin_caravaglia/Documents/repo/Visual_FE/src/Home_Base/Bill.js"
       title="Billing Page"
       width="100%"
       height="1000"
