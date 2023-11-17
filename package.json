@@ -9,7 +9,8 @@
     "reactstrap": "^9.2.0"
   },
   "scripts": {
-    "start": "node -r dotenv/config ./node_modules/react-scripts/scripts/start.js"
+    "start": "node -r dotenv/config ./node_modules/react-scripts/scripts/start.js",
+    "build": "react-scripts build"
   },
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "",
