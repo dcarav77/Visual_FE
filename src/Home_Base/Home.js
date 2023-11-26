@@ -26,7 +26,7 @@ function Home() {
         <button className="cta-button" onClick={() => navigate('/UnleashHell')}>Unleash Hell</button>
       </section>
 
-      {/* About Us */}
+      {/* Unlock */}
       <section className="about">
         <h1>Unlock Your Potential</h1>
         <p>Discover the most effective path to mastery by investing in self-improvement through training, mentorship, or coaching. </p>
