@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './Bill.css';
+import './bill.css';
 import { useNavigate } from 'react-router-dom';
 
 const BillingPage = () => {
