@@ -4,7 +4,7 @@ import GetRequest from './API/fetchPlaceholder';
 
 import Home from './Home_Base/Home.js';
 import { Navigate } from 'react-router-dom';
-import BillingPage from './Home_Base/Bill';
+
 
 
 import Footer from './Home_Base/Footer';
@@ -12,7 +12,6 @@ import Fitness from './Home_Base/Fitness';
 import UnleashHell from './Hooks/UnleashHell';
 import Header from './Home_Base/Header';
 
-// Import your Stripe components
 import { CheckoutForm, Return } from './Stripe/thing';      
 
 
@@ -39,9 +38,10 @@ function App() {
       <Routes>
        
         <Route path="/" element={<Home />} />
-        <Route path="/signup" element={<BillingPage />} />
+        
         <Route path="/UnleashHell" element={<Fitness />} />
-        <Route path="/checkout" element={<CheckoutForm />} /> // New route for CheckoutForm
+        <Route path="/checkout" element={<CheckoutForm productId="product1"  />} /> // New route for CheckoutForm
+        <Route path="/checkout" element={<CheckoutForm productId="product2"  />} /> 
         <Route path="/return" element={<Return />} />         // New route for Return
         
        

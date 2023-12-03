@@ -6,17 +6,21 @@ import { Navigate } from "react-router-dom";
 // This is your test public API key.
 const stripePromise = loadStripe("pk_test_51O7mnXEBiprZstxkJxFS7kV9OehUwg7zb7EWUFYVC9TpqLPYksFU43kEO494Gi0MiAxZk6ZUGg4dQnj5CMMk7Bvy00iCOLPehX");
 
-export const CheckoutForm = () => {
+export const CheckoutForm = ({ productId }) => {
   const [clientSecret, setClientSecret] = useState('');
 
   useEffect(() => {
-    // Create a Checkout Session as soon as the page loads
+    
     fetch("http://localhost:5000/create-checkout-session", {
       method: "POST",
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({ product_id: productId })  // Send the product ID to the backend
     })
     .then((res) => res.json())
     .then((data) => setClientSecret(data.clientSecret));
-  }, []);
+  }, [productId]);
 
   return (
     <div id="checkout">
