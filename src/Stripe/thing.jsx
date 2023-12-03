@@ -10,6 +10,13 @@ export const CheckoutForm = ({ productId }) => {
   const [clientSecret, setClientSecret] = useState('');
 
   useEffect(() => {
+    document.body.classList.add('hide-header');
+    return () => {
+      document.body.classList.remove('hide-header');
+    };
+  }, []);
+  
+  useEffect(() => {
     
     fetch("http://localhost:5000/create-checkout-session", {
       method: "POST",

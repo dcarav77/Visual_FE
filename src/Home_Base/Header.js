@@ -9,7 +9,7 @@ function Header() {
     <header className="header">
       <nav className="nav">
       <section className="cta">
-          <button className="cta-button" onClick={() => navigate('/signup')}> Start My Transformation Now </button>
+          <button className="cta-button" onClick={() => navigate('/checkout')}> Start My Transformation Now </button>
         </section>
       </nav>
     </header>
