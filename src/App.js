@@ -35,9 +35,8 @@ function App() {
        
         <Route path="/" element={<Home />} />
         <Route path="/UnleashHell" element={<Fitness />} />
-        <Route path="/checkout" element={<CheckoutForm productId="product1"  />} /> 
-        <Route path="/checkout" element={<CheckoutForm productId="product2"  />} /> 
-        <Route path="/return" element={<Return />} />         // New route for Return
+        <Route path="/checkout" element={<CheckoutForm />} /> 
+        <Route path="/return" element={<Return />} />         
         
        
       </Routes>

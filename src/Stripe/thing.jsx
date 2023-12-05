@@ -1,13 +1,16 @@
 import React, { useState, useEffect } from "react";
 import { loadStripe } from '@stripe/stripe-js';
 import { EmbeddedCheckoutProvider, EmbeddedCheckout } from '@stripe/react-stripe-js';
-import { Navigate } from "react-router-dom";
+import { Navigate, useLocation } from "react-router-dom";
 
 // This is your test public API key.
 const stripePromise = loadStripe("pk_test_51O7mnXEBiprZstxkJxFS7kV9OehUwg7zb7EWUFYVC9TpqLPYksFU43kEO494Gi0MiAxZk6ZUGg4dQnj5CMMk7Bvy00iCOLPehX");
 
-export const CheckoutForm = ({ productId }) => {
+export const CheckoutForm = () => {
   const [clientSecret, setClientSecret] = useState('');
+  const location = useLocation();
+  const selectedProduct = location.state?.selectedProduct; // Retrieve selectedProduct from state 
+
 
   useEffect(() => {
     document.body.classList.add('hide-header');
@@ -15,19 +18,23 @@ export const CheckoutForm = ({ productId }) => {
       document.body.classList.remove('hide-header');
     };
   }, []);
+
+
   
   useEffect(() => {
-    
-    fetch("http://localhost:5000/create-checkout-session", {
-      method: "POST",
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({ product_id: productId })  // Send the product ID to the backend
-    })
-    .then((res) => res.json())
-    .then((data) => setClientSecret(data.clientSecret));
-  }, [productId]);
+    if (selectedProduct) {
+      console.log("Selected Product:", selectedProduct);
+      fetch("http://localhost:5000/create-checkout-session", {
+        method: "POST",
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ priceId: selectedProduct.stripePriceId })
+      })
+      .then((res) => res.json())
+      .then((data) => setClientSecret(data.clientSecret));
+    }
+  }, [selectedProduct]);
 
   return (
     <div id="checkout">

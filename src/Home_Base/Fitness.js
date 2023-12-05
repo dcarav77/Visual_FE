@@ -2,9 +2,32 @@ import React from 'react';
 import './fitness.css';
 import { useNavigate } from 'react-router-dom';
 
+const products = [
+  {
+    id: 'product1',
+    name: 'One Month Plan',
+    price: 299,
+    stripePriceId: 'price_1OIZF4EBiprZstxk4WEIomoJ'
+  },
+  {
+    id: 'product2',
+    name: 'Three Month Plan',
+    price: 750,
+    stripePriceId: 'price_1OIZHNEBiprZstxkGmLELjaG'
+  }
+];
+
 function Fitness() {
   const navigate = useNavigate();
 
+
+  const handleSelectProduct = (productId) => {
+    const selectedProduct = products.find(product => product.id === productId);
+    if (selectedProduct) {
+      navigate('/checkout', { state: { selectedProduct } });
+    }
+  };
+   
   return (
     <div className="Fitness">
       <header>
@@ -62,11 +85,11 @@ function Fitness() {
 
 
 <section className="membership-options">
-  <div className="membership-option">
+  <div className="membership-option" onClick={() => handleSelectProduct('product1')}>
     <h3>Monthly</h3>
     <p>$299 / MONTH</p>
   </div>
-  <div className="membership-option">
+  <div className="membership-option" onClick={() => handleSelectProduct('product2')}>
     <h3>3 month commitment</h3>
     <p>$750 / 3 MONTHS</p>
   </div>

@@ -42,7 +42,7 @@
   text-align: center;
   border: 1px solid #0e0d0d;
   margin: 0 5px;
-  font-size: 24px; 
+  font-size: 24px;  
 }
 
 /* Style only the "Monthly" container */
@@ -60,4 +60,11 @@
   display: block;
   margin: 10px auto;
   max-width: 80%; 
+}
+
+.membership-option:hover {
+  background-color: #4CAF50; /* Change this to your desired hover color */
+  color: white; /* Change text color on hover if needed */
+  cursor: pointer; /* Changes the cursor to indicate it's clickable */
+  /* Add any other hover styles you want here */
 }
