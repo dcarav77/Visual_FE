@@ -7,7 +7,7 @@ const products = [
     id: 'product1',
     name: 'One Month Plan',
     price: 299,
-    stripePriceId: 'price_1OIZF4EBiprZstxk4WEIomoJ'
+    stripePriceId: 'price_1OL9LdEBiprZstxkEduuuXkp'
   },
   {
     id: 'product2',
