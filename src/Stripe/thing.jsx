@@ -9,7 +9,7 @@ const stripePromise = loadStripe("pk_test_51O7mnXEBiprZstxkJxFS7kV9OehUwg7zb7EWU
 export const CheckoutForm = () => {
   const [clientSecret, setClientSecret] = useState('');
   const location = useLocation();
-  const selectedProduct = location.state?.selectedProduct; // Retrieve selectedProduct from state 
+  const selectedProduct = location.state?.selectedProduct; 
 
 
   useEffect(() => {
@@ -19,8 +19,7 @@ export const CheckoutForm = () => {
     };
   }, []);
 
-
-  
+//Button click
   useEffect(() => {
     if (selectedProduct) {
       console.log("Selected Product:", selectedProduct);
@@ -49,23 +48,49 @@ export const CheckoutForm = () => {
     </div>
   );
 };
-
+//Return Route after buying
 export const Return = () => {
   const [status, setStatus] = useState(null);
   const [customerEmail, setCustomerEmail] = useState('');
+  const [error, setError] = useState(null); 
 
   useEffect(() => {
-    const queryString = window.location.search;
-    const urlParams = new URLSearchParams(queryString);
-    const sessionId = urlParams.get('session_id');
-
-    fetch(`/session-status?session_id=${sessionId}`)
-    .then((res) => res.json())
-    .then((data) => {
-      setStatus(data.status);
-      setCustomerEmail(data.customer_email);
-    });
+    const fetchData = async () => {
+      try {
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+        const sessionId = urlParams.get('session_id');
+        console.log("Session ID:", sessionId);
+  
+        if (sessionId) {
+          const response = await fetch(`http://localhost:5000/session-status?session_id=${sessionId}`);
+          if (!response.ok) {
+            throw new Error(`Error: ${response.status}`);
+          }
+          const data = await response.json();
+          if (data.status === 'open') {
+            
+          } else if (data.status === 'complete') {
+            
+            setStatus(data.status);
+            setCustomerEmail(data.customer_email);
+          }
+        } else {
+          setError("Session ID is missing");
+        }
+      } catch (error) {
+        console.error('Error fetching data:', error);
+        setError(error.toString());
+      }
+    };
+  
+    fetchData();
   }, []);
+  
+
+  if (error) {
+    return <div>Error: {error}</div>; // Display error
+  }
 
   if (status === 'open') {
     return <Navigate to="/checkout" />;

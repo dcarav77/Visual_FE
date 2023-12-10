@@ -67,7 +67,7 @@ function Home() {
       {/* Download/Signup CTA */}
       <section className="cta">
         <h2>Get Sober, Get Lean, Get Your Life Back</h2>
-        <button className="cta-button" onClick={() => navigate('/checkout')}>  Sign Up Now </button>
+        <button className="cta-button" onClick={() => navigate('/UnleashHell')}>  Sign Up Now </button>
 
       </section> 
     </div> 

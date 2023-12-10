@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 
+// UPDATE FOR HTTPS
 
 class GetRequest extends Component {
   componentDidMount() {
-    const apiUrl = 'http://strongallalong.coach/api/'; //changed 'https://jsonplaceholder.typicode.com/posts'
+    const apiUrl = 'http://strongallalong.coach/api/'; 
     fetch(apiUrl)
       .then((response) => response.json())
       .then((data) => console.log('This is your data', data))
