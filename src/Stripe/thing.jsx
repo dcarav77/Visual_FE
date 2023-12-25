@@ -4,7 +4,9 @@ import { EmbeddedCheckoutProvider, EmbeddedCheckout } from '@stripe/react-stripe
 import { Navigate, useLocation } from "react-router-dom";
 
 // This is your test public API key.
-const stripePromise = loadStripe("pk_test_51O7mnXEBiprZstxkJxFS7kV9OehUwg7zb7EWUFYVC9TpqLPYksFU43kEO494Gi0MiAxZk6ZUGg4dQnj5CMMk7Bvy00iCOLPehX");
+const stripePromise = loadStripe("pk_live_51O7mnXEBiprZstxkBlUcDaR3NN4Qkmke4LtW5RVGRwKiRl6kdWLNdWf8sXrgVKcPJw9TXzPf052gmzRmxEQ6OfAU002CcUGNPs");
+
+
 
 
 export const CheckoutForm = () => {
