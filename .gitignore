@@ -1,2 +1,21 @@
-node_modules
+# Dependency directory
+node_modules/
+
+# Environment configuration
 .env
+
+# Production build directory
+build/
+
+# Logs
+*.log
+*.tmp
+*.cache
+
+# Editor directories and files
+.vscode/
+.idea/
+
+# Operating system files
+.DS_Store
+Thumbs.db
