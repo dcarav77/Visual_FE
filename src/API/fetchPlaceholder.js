@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
 
-// UPDATE FOR HTTPS
-
 class GetRequest extends Component {
   componentDidMount() {
-    const apiUrl = 'http://strongallalong.coach/api/'; 
+    const apiUrl = process.env.REACT_APP_API_URL; 
     fetch(apiUrl)
       .then((response) => response.json())
       .then((data) => console.log('This is your data', data))

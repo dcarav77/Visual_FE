@@ -28,19 +28,19 @@ function Home() {
 
       {/* Unlock */}
       <section className="about">
-        <h1>Unlock Your Potential</h1>
-        <p>Discover the most effective path to mastery by investing in self-improvement through training, mentorship, or coaching. </p>
-        <p>I have dedicated myself to rigorous training under the guidance of a renowned Mindset/Performance coach.</p>
-        <p>A coach's role isn't to make decisions for you, but rather to safeguard you from making detrimental choices. </p>
+        <h1>GET YOUR LIFE BACK</h1>
+        <p>Unlock your potential by investing in my self-improvement and coaching program </p>
+        <p>I have dedicated myself to rigorous training under the BEST Performance and Personal Developemt coaches worldwide</p>
+        <p>A coach's role isn't to make decisions FOR YOU, but stop you from going down the wrong path </p>
       </section>
 
       {/* Feature 1 */}
       <section className="features">
         <h2>Sick of being DRUNK??</h2>
-        <h2>Seeking a Connection...</h2>
+        <h2>Seeking a Romantic Connection...</h2>
         <div className="feature">
           <img src="/images/drunkgreen.jpeg" alt="Feature 1"  class="feature-image-1" />
-          <h3>I was an Alcoholic, Pleasure Seeker</h3>
+          <h3>I was an Alcoholic Pleasure Seeker</h3>
           <p>Bagging Groceries - Living in a Double Wide Trailer - Looking for LOVE in a BAR! </p>
         </div>
         {/* Feature 2 */}
@@ -57,7 +57,7 @@ function Home() {
       <section className="testimonials testimonial-background">
         <h2 style={{ marginLeft: '330px' }}>I Need a Drink, I need a Break, I Need to Relax!</h2>
         <div className="testimonial" style={{ marginTop: '275px', width: '400px', height: '120px', marginLeft: '330px' }}>
-          <h3>FRAT BOYS!</h3>
+          <h3>FRAT BOYS & SORORITY GIRLS!</h3>
           <p>It's NOT about what you WANT to do</p>
           <p>It's what you HAVE to do</p>
         </div>

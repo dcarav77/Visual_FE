@@ -106,7 +106,7 @@ export const Return = () => {
     return (
       <section id="success">
         <p>We appreciate your business! </p>
-        <p>I will put something here later</p>
+        <p>You will receive an email and text message from the information you provided</p>
       </section>
     );
   }

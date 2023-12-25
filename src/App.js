@@ -10,8 +10,8 @@ import Fitness from './Home_Base/Fitness';
 import UnleashHell from './Hooks/UnleashHell';
 import Header from './Home_Base/Header';
 
-import { CheckoutForm, Return } from './Stripe/thing'; //changed 
-import { PaymentIntentForm } from './Stripe/payment_intent'; //added
+import { CheckoutForm, Return } from './Stripe/thing'; 
+import { PaymentIntentForm } from './Stripe/payment_intent'; 
 
 
 function App() {

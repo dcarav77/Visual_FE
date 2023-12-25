@@ -9,7 +9,7 @@ function Header() {
     <header className="header">
       <nav className="nav">
       <section className="cta">
-          <button className="cta-button" onClick={() => navigate('/checkout')}> Header Under Construction </button>
+          <button className="cta-button" onClick={() => navigate('/checkout')}> More Features Coming Soon </button>
         </section>
       </nav>
     </header>

@@ -42,7 +42,9 @@ function Fitness() {
         <span className="checkmark">✔</span>
         <div className="list-content">
           
-          <h3>2x Weekly 60+ Minute Video Calls</h3>
+          <h3>Two Live Weekly Video Calls...</h3>
+          <h4>One Group Call for All Members</h4>
+          <h5>One Face to Face for Three Month Membership</h5>
           <p>Q&A Sessions - "How do I handle family & friends who want me to drink?"</p>
         </div>
       </div>
@@ -69,7 +71,7 @@ function Fitness() {
         <span className="checkmark">✔</span>
         <div className="list-content">
           <h3>Access 24/7 support through the exclusive private app</h3>
-          <p>Connect with like-minded individuals on a shared growth journey through our private accountability app</p>
+          <p>Connect with like-minded individuals on a shared growth journey through the private accountability app</p>
         </div>
       </div>
     </li>
