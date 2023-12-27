@@ -23,11 +23,13 @@ export const CheckoutForm = () => {
     };
   }, []);
 
+  
+
 //Button click
   useEffect(() => {
     if (selectedProduct) {
       console.log("Selected Product:", selectedProduct);
-      fetch("http://localhost:5000/create-checkout-session", {
+      fetch("https://localhost:5000/api/create-checkout-session", {
         method: "POST",
         headers: {
           'Content-Type': 'application/json'
