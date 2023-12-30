@@ -3,13 +3,13 @@ import { loadStripe } from '@stripe/stripe-js';
 import { EmbeddedCheckoutProvider, EmbeddedCheckout } from '@stripe/react-stripe-js';
 import { Navigate, useLocation } from "react-router-dom";
 
-// This is your test public API key.
+
 const stripePromise = loadStripe("pk_test_51O7mnXEBiprZstxkJxFS7kV9OehUwg7zb7EWUFYVC9TpqLPYksFU43kEO494Gi0MiAxZk6ZUGg4dQnj5CMMk7Bvy00iCOLPehX");
 
 
 export const CheckoutForm = () => {
   const [clientSecret, setClientSecret] = useState('');
-  const [userEmail, setUserEmail] = useState(''); //new
+  const [userEmail, setUserEmail] = useState(''); 
   const location = useLocation();
   const selectedProduct = location.state?.selectedProduct; 
 
@@ -21,7 +21,7 @@ export const CheckoutForm = () => {
     };
   }, []);
 
-//Button click
+
   useEffect(() => {
     if (selectedProduct) {
       console.log("Selected Product:", selectedProduct);
@@ -32,7 +32,7 @@ export const CheckoutForm = () => {
         },
         body: JSON.stringify({ 
           priceId: selectedProduct.stripePriceId, 
-          customer_email: userEmail  //new
+          customer_email: userEmail  
         
         })
       })
@@ -95,7 +95,7 @@ export const Return = () => {
   
 
   if (error) {
-    return <div>Error: {error}</div>; // Display error
+    return <div>Error: {error}</div>; 
   }
 
   if (status === 'open') {
