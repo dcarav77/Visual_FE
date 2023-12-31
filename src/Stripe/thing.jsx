@@ -6,7 +6,7 @@ import { Navigate, useLocation } from "react-router-dom";
 
 const stripePromise = loadStripe("pk_test_51O7mnXEBiprZstxkJxFS7kV9OehUwg7zb7EWUFYVC9TpqLPYksFU43kEO494Gi0MiAxZk6ZUGg4dQnj5CMMk7Bvy00iCOLPehX");
 
-
+// Component for handling the checkout process.
 export const CheckoutForm = () => {
   const [clientSecret, setClientSecret] = useState('');
   const [userEmail, setUserEmail] = useState(''); 
@@ -21,7 +21,7 @@ export const CheckoutForm = () => {
     };
   }, []);
 
-
+ // Effect to create a Stripe checkout session when a product is selected.
   useEffect(() => {
     if (selectedProduct) {
       console.log("Selected Product:", selectedProduct);
@@ -54,21 +54,25 @@ export const CheckoutForm = () => {
     </div>
   );
 };
-//Return Route after buying
+
+// Component to handle the return from the Stripe checkout process.
 export const Return = () => {
   const [status, setStatus] = useState(null);
   
   const [error, setError] = useState(null); 
 
+// Effect to fetch the session status on component mount.
   useEffect(() => {
     const fetchData = async () => {
       try {
+        // Extract the session ID from the URL.
         const queryString = window.location.search;
         const urlParams = new URLSearchParams(queryString);
         const sessionId = urlParams.get('session_id');
         console.log("Session ID:", sessionId);
   
         if (sessionId) {
+          // Request to check the session status from the server.
           const response = await fetch(`http://localhost:5000/session-status?session_id=${sessionId}`);
           if (!response.ok) {
             throw new Error(`Error: ${response.status}`);
@@ -93,7 +97,7 @@ export const Return = () => {
     fetchData();
   }, []);
   
-
+  // Render based on the state.
   if (error) {
     return <div>Error: {error}</div>; 
   }
@@ -111,5 +115,5 @@ export const Return = () => {
     );
   }
 
-  return null;
+  return null; // Render nothing by default.
 };

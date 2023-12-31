@@ -1,2 +1,51 @@
-node_modules
-.env
+# Dependency directories
+node_modules/
+venv/                # Python virtual environment
+__pycache__/         # Python compiled files
+*.pyc
+
+# Environment variables
+.env                 # Don't forget to not include the dot at the end
+.env.*.local
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# Build directories
+/build
+/dist
+
+# Production specific
+.DS_Store
+instance/            # Flask instance folder
+*.db                 # Database file
+*.sqlite             # SQLite file
+
+# IDE specific
+.vscode/             # Visual Studio Code
+.idea/               # JetBrains IDEs like PyCharm, IntelliJ
+*.swp                # Vim swap files
+*.swo
+*~                   # Temporary files
+
+# Misc
+.cache               # Cache directories like for eslint
+coverage/            # Coverage reports
+node_modules/
+jspm_packages/
+
+# MacOS specific
+.DS_Store
+
+# Thumbnails
+Thumbs.db
+
+# Yarn
+yarn-error.log
+yarn-debug.log*
+.yarn-integrity
+
+# Flask specific
+/flask_session/      # Flask session files
