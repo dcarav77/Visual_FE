@@ -7,13 +7,13 @@ const products = [
     id: 'product1',
     name: 'One Month Plan',
     price: 299,
-    stripePriceId: 'price_1OL9LdEBiprZstxkEduuuXkp'
+    stripePriceId: process.env.REACT_APP_STRIPE_PRICE_ID_ONE_MONTH
   },
   {
     id: 'product2',
     name: 'Three Month Plan',
     price: 750,
-    stripePriceId: 'price_1OIZHNEBiprZstxkGmLELjaG'
+    stripePriceId: process.env.REACT_APP_STRIPE_PRICE_ID_THREE_MONTH
   }
 ];
 
