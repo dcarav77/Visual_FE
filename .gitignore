@@ -7,6 +7,8 @@ __pycache__/         # Python compiled files
 # Environment variables
 .env                 # Don't forget to not include the dot at the end
 .env.*.local
+.env.production
+.env.development
 
 # Logs
 logs/
