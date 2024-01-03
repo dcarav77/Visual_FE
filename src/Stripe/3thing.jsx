@@ -30,7 +30,8 @@ export const CheckoutForm = () => {
   useEffect(() => {
     if (selectedProduct) {
       console.log("Selected Product:", selectedProduct);
-      const url = `${process.env.REACT_APP_API_URL}/create-checkout-session`;
+      const url = `${process.env.REACT_APP_API_URL}/api/create-checkout-session`;
+      //const url = `${process.env.REACT_APP_API_URL}/create-checkout-session`;
       fetch(url, {
         method: "POST",
         headers: {
@@ -85,7 +86,8 @@ export const Return = () => {
   
         try {
           // Request to check the session status from the server.
-          const url = `${process.env.REACT_APP_API_URL}/session-status?session_id=${sessionId}`;
+          //const url = `${process.env.REACT_APP_API_URL}/session-status?session_id=${sessionId}`;
+          const url = `${process.env.REACT_APP_API_URL}/api/session-status?session_id=${sessionId}`;
           const response = await fetch(url);
           
           console.log('Full response from server:', response);
