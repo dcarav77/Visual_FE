@@ -1,131 +1,197 @@
-/* home.css */
-.Home {
-    text-align: center;
-    padding: 20px;
-  }
-  
-  /* Hero Section */
-  .hero {
-    background-image: url('../../public/images/ohb.png');
-    background-size: contain;
-    background-position: center top;
-    background-repeat: no-repeat; 
-    color: #fff;
-    height: 190px;
-    padding: 20% 0;
-  }
+/* home.css - Original and Updated Styles */
 
-  .hero h1 {
-    font-size: 36px;
-    margin-bottom: 20px;
-  }
-  
-  .hero p {
-    font-size: 18px;
-    margin-bottom: 30px;
-  }
-  
-  .cta-button {
-    background-color: #0015ff;
-    color: #fff;
-    font-size: 16px;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .cta-button:hover {
-    background-color: #b30086;
-  }
-  
-  /* Unlock */
-  .about {
-    padding: 2% 0;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
-  }
-  .about h1 {
-    font-size: 60px;
-  }
-  
-  .about h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-  
-  /* Features */
-  .features {
-    padding: 40px 0;
-  }
-  
-  .features h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-  
-  .feature {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 30px;
-  }
-  
-/* Style the first image */
+.Home {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Hero Section */
+.hero {
+  background-image: url('../../public/images/ohb.png');
+  background-size: contain;
+  background-position: center top;
+  background-repeat: no-repeat; 
+  color: #fff;
+  height: 190px;
+  padding: 20% 0;
+}
+
+.hero h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.cta-button {
+  background-color: #0015ff;
+  color: #fff;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.cta-button:hover {
+  background-color: #b30086;
+}
+
+/* Unlock Section */
+.about {
+  padding: 2% 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.about h1 {
+  font-size: 60px;
+}
+
+.about h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Features Section */
+.features {
+  padding: 40px 0;
+}
+
+.features h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+/* Feature Images */
 .feature-image-1 {
   width: 400px;
   height: auto;
   margin-bottom: 10px;
 }
 
-
-.feature-image-2{
-  width: 620px; 
+.feature-image-2 {
+  width: 620px;
   height: auto;
   margin-bottom: 10px;
 }
 
+/* Four-pic Section - Updated Styles */
+.four-pic {
+  background-image: url('../../public/images/channelchanger.jpeg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 500px;
+  padding: 20px;
+  text-align: center;
+  color: rgb(12, 11, 11);
+}
 
-  /* Testimonials */
-  .testimonials {
-    padding: 10px 0;
-  }
-  
-  .testimonials h2 {
-    font-size: 28px; 
-    font-weight: bold; 
-    margin-bottom: 5px; 
-  
-  }
-  
-  .testimonial {
-    background-color: #d0e1ce;
-    padding: 1px;
-    border-radius: 2px;
-    margin-bottom: 5px;
+.four-pic h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.four-pic .testimonial {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+}
+
+.four-pic .testimonial h3 {
+  font-size: 24px;
+  margin-top: 0;
+}
+
+.four-pic .testimonial p {
+  font-size: 18px;
+}
+
+/* CTA Section */
+.cta {
+  padding: 60px 0;
+}
+
+.cta h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Hide header */
+body.hide-header header {
+  display: none;
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 768px) {
+  .Home {
+      padding: 10px;
   }
 
-  .testimonial-background {
-    background-image: url('../../public/images/channelchanger.jpeg'); 
-    background-size: cover; 
-    background-position: center center; 
-    background-repeat: no-repeat; 
-    height: 500px; 
-    padding: 20px;
-    
+  .hero {
+      height: auto;
+      padding: 10% 0;
   }
-  
-  
-  /* Download/Signup CTA */
-  .cta {
-    padding: 60px 0;
+
+  .hero h1 {
+      font-size: 24px;
   }
-  
+
+  .hero p {
+      font-size: 16px;
+  }
+
+  .cta-button {
+      font-size: 14px;
+      padding: 8px 15px;
+  }
+
+  .about h1 {
+      font-size: 36px;
+  }
+
+  .about h2 {
+      font-size: 20px;
+  }
+
+  .features h2 {
+      font-size: 20px;
+  }
+
+  .feature-image-1, .feature-image-2 {
+      width: 100%;
+      height: auto;
+  }
+
+  .four-pic {
+      height: auto; /* Flexible height */
+  }
+
+  .four-pic h2 {
+      font-size: 24px;
+  }
+
+  .four-pic .testimonial h3 {
+      font-size: 20px;
+  }
+
+  .four-pic .testimonial p {
+      font-size: 16px;
+  }
+
   .cta h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
+      font-size: 20px;
   }
-  
-  body.hide-header header {
-    display: none;
-  }
+}
 
- 
+/* Additional media queries can be added as needed */

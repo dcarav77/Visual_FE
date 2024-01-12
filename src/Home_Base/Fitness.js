@@ -62,7 +62,7 @@ function Fitness() {
       <div className="list-item">
         <span className="checkmark">✔</span>
         <div className="list-content">
-        <h3>Proven Fitness Guidance from an NCAA Wrestler and Special Operations Vet  </h3>
+        <h3>Proven Fitness Guidance from NCAA Wrestler & Special Operations Vet  </h3>
         </div>
       </div>
     </li>
@@ -70,8 +70,9 @@ function Fitness() {
       <div className="list-item">
         <span className="checkmark">✔</span>
         <div className="list-content">
-          <h3>Access 24/7 support through the exclusive private app</h3>
-          <p>Connect with like-minded individuals on a shared growth journey through the private accountability app</p>
+          <h3>24/7 access & support in the private messanger</h3>
+          <p>Easily connect with me and other individuals in the group</p>
+          <p>Coming Soon: Exclusive Linkedin Partnership Opportunities for All Members</p>
         </div>
       </div>
     </li>
@@ -85,8 +86,8 @@ function Fitness() {
           </div>
 </section>
 
-
 <section className="membership-options">
+  <h2>Sign Up Here</h2> 
   <div className="membership-option" onClick={() => handleSelectProduct('product1')}>
     <h3>Monthly</h3>
     <p>$299 / MONTH</p>

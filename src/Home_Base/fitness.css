@@ -9,7 +9,6 @@
 
 .Fitness ul {
   list-style-type: none; 
-  
 }
 
 .Fitness li {
@@ -28,43 +27,108 @@
   font-size: 24px; 
 }
 
-
 .membership-options {
   display: flex;
-  justify-content: space-between;
+  justify-content: center; /* Aligns buttons side by side */
+  flex-wrap: wrap; /* Allows buttons to wrap on smaller screens */
 }
 
-/* prices */
+.membership-options h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  width: 100%; /* Makes the heading take full width */
+  text-align: center;
+}
+
 .membership-option {
   padding: 20px;
   border-radius: 5px;
-  flex: 1;
   text-align: center;
   border: 1px solid #0e0d0d;
-  margin: 0 5px;
-  font-size: 24px;  
-}
-
-/* Style only the "Monthly" container */
-.membership-option:nth-child(1) {
-  background-color: rgb(14, 2, 2);
+  font-size: 24px;
+  flex: 1; /* Allows buttons to grow and occupy equal space */
+  margin: 5px; /* Adds margin around each button */
+  min-width: 200px; /* Minimum width for each button */
+  max-width: 300px; /* Maximum width for each button */
+  background-color: rgb(37, 95, 77);
   color: white;
-}
-
-.membership-option:nth-child(2) {
-  background-color: rgb(52, 16, 232);
-  color: white;
-}
-/* my back */
-.Fitness .membership-image {
-  display: block;
-  margin: 10px auto;
-  max-width: 80%; 
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .membership-option:hover {
-  background-color: #4CAF50; /* Change this to your desired hover color */
-  color: white; /* Change text color on hover if needed */
-  cursor: pointer; /* Changes the cursor to indicate it's clickable */
-  /* Add any other hover styles you want here */
+  background-color: #4CAF50;
+  color: black;
 }
+
+/* Specific color for the second button */
+.membership-option:nth-child(2) {
+  background-color: rgb(11, 100, 190);
+}
+
+/* Hover effect for the second button */
+.membership-option:nth-child(2):hover {
+  background-color: #100cef; 
+  color: black; 
+}
+
+/* Features Section */
+.features {
+  text-align: center;
+  padding: 20px;
+}
+
+.features h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.feature {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.feature .membership-image {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Media query for screens smaller than 768px */
+@media screen and (max-width: 768px) {
+  .Fitness {
+    padding: 50px;
+    margin: 10px;
+  }
+
+  .Fitness ul, .Fitness li {
+    margin: 20px 0;
+  }
+
+  .Fitness .list-item {
+    font-size: 18px;
+  }
+
+  .membership-options {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+   
+  }
+
+  .membership-option {
+    width: 90%; 
+    margin-bottom: 10px;
+    padding-right: 1px;
+    min-width: auto; 
+    max-width: none; 
+    margin-left: auto; 
+   
+
+  }
+
+  .feature .membership-image {
+    max-width: 100%;
+  }
+}
+
+

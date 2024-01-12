@@ -29,9 +29,10 @@ function Home() {
       {/* Unlock */}
       <section className="about">
         <h1>GET YOUR LIFE BACK</h1>
-        <p>Unlock your potential by investing in my self-improvement and coaching program </p>
-        <p>I have dedicated myself to rigorous training under the BEST Performance and Personal Developemt coaches worldwide</p>
-        <p>A coach's role isn't to make decisions FOR YOU, but stop you from going down the wrong path </p>
+        <p>Why me, there are thousands of "coaches"??</p>
+        <p>Just like Universitiy, there are Top Tier and then everyone else</p>
+        <p>Accountability is key:</p>
+        <p>Let's get you going back in the right direction </p>
       </section>
 
       {/* Feature 1 */}
@@ -54,15 +55,16 @@ function Home() {
        
       </section>
 
-      <section className="testimonials testimonial-background">
-        <h2 style={{ marginLeft: '330px' }}>I Need a Drink, I need a Break, I Need to Relax!</h2>
-        <div className="testimonial" style={{ marginTop: '275px', width: '400px', height: '120px', marginLeft: '330px' }}>
-          <h3>FRAT BOYS & SORORITY GIRLS!</h3>
-          <p>It's NOT about what you WANT to do</p>
-          <p>It's what you HAVE to do</p>
+      <section className="four-pic">
+    <div className="testimonial-content">
+        <h2>I Need a Drink, I Need a Break, I Need to Relax!</h2>
+        <div className="relax">
+            <h4>If you think MORE comfort is what you need</h4>
+            <h4>Get on this program</h4>
         </div>
-        
-      </section>
+    </div>
+</section>
+
 
       {/* Download/Signup CTA */}
       <section className="cta">
