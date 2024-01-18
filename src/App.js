@@ -9,6 +9,7 @@ import Fitness from './Home_Base/Fitness';
 import UnleashHell from './Hooks/UnleashHell';
 import Header from './Home_Base/Header';
 import { CheckoutForm, Return } from './Stripe/3thing.jsx'; 
+import PrivacyPolicy from './Home_Base/policy.js';
 
 
 
@@ -33,7 +34,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/UnleashHell" element={<Fitness />} />
         <Route path="/checkout" element={<CheckoutForm />} /> 
-        <Route path="/return" element={<Return />} />         
+        <Route path="/return" element={<Return />} />  
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />     
         
        
       </Routes>

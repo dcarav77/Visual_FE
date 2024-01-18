@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './footer.css';
+import PrivacyPolicy from './policy';
 
 function Footer() {
   const navigate = useNavigate();
@@ -33,7 +34,8 @@ function Footer() {
           <h3 className="footer-heading">Legal</h3>
           <ul className="footer-list">
             <li className="footer-list-item"><a href="#">Terms & conditions</a></li>
-            <li className="footer-list-item"><a href="#">Privacy policy</a></li>
+            <li className="footer-list-item"><a href="/privacy-policy">Privacy Policy</a></li>
+
             <li className="footer-list-item"><a href="#">Disclaimer</a></li>
             <li className="footer-list-item"><a href="#">Return exchange</a></li>
           </ul>

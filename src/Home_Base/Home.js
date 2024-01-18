@@ -30,7 +30,7 @@ function Home() {
       <section className="about">
         <h1>GET YOUR LIFE BACK</h1>
         <p>Why me, there are thousands of "coaches"??</p>
-        <p>Just like Universitiy, there are Top Tier and then everyone else</p>
+        <p>Just like University, there are Top Tier and then everyone else</p>
         <p>Accountability is key:</p>
         <p>Let's get you going back in the right direction </p>
       </section>
