@@ -14,6 +14,7 @@ import PrivacyPolicy from './Home_Base/policy.js';
 import Contact from './Home_Base/contact.js';
 import Disclaimer from './Home_Base/disclaimer.js';
 import TermsConditions from './Home_Base/terms.js'
+import RefundPolicy from './Home_Base/refund.js'
 
 
 
@@ -44,7 +45,8 @@ function App() {
         <Route path="/privacy-policy" element={<PrivacyPolicy />} /> 
         <Route path="/contact" element={<Contact />} />  
         <Route path="/disclaimer" element={<Disclaimer />} /> 
-        <Route path="/terms" element={<TermsConditions />} />       
+        <Route path="/terms" element={<TermsConditions />} /> 
+        <Route path="/refund" element={<RefundPolicy />} />        
         
        
       </Routes>
