@@ -62,11 +62,7 @@ function PrivacyPolicy() {
         If you have questions about this Privacy Policy or wish to exercise your rights, please contact us at admin@strongallalong.coach.
       </p>
       
-      <p>
-        I can provide you with a basic example of a privacy policy for your fitness website "StrongAllAlong." However, please keep in mind that this is a generic template, and it's highly recommended to consult with a legal professional to tailor it to your specific needs and ensure compliance with applicable laws and regulations. Here's a simplified example:
-      </p>
-
-      {/* Rest of your Privacy Policy content */}
+  
     </div>
   );
 }
