@@ -32,7 +32,7 @@ function Footer() {
         <div className="footer-column">
           <h3 className="footer-heading">Legal</h3>
           <ul className="footer-list">
-            <li className="footer-list-item"><a href="#">Terms & conditions</a></li>
+            <li className="footer-list-item"><a href="/terms">Terms & conditions</a></li>
             <li className="footer-list-item"><a href="/privacy-policy">Privacy Policy</a></li>
             <li className="footer-list-item"><a href="/disclaimer">Disclaimer</a></li>
             <li className="footer-list-item"><a href="#">Return exchange</a></li>

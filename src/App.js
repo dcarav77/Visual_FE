@@ -9,7 +9,11 @@ import Fitness from './Home_Base/Fitness';
 import UnleashHell from './Hooks/UnleashHell';
 import Header from './Home_Base/Header';
 import { CheckoutForm, Return } from './Stripe/3thing.jsx'; 
+
 import PrivacyPolicy from './Home_Base/policy.js';
+import Contact from './Home_Base/contact.js';
+import Disclaimer from './Home_Base/disclaimer.js';
+import TermsConditions from './Home_Base/terms.js'
 
 
 
@@ -35,7 +39,12 @@ function App() {
         <Route path="/UnleashHell" element={<Fitness />} />
         <Route path="/checkout" element={<CheckoutForm />} /> 
         <Route path="/return" element={<Return />} />  
-        <Route path="/privacy-policy" element={<PrivacyPolicy />} />     
+        
+         {/* Footer */}
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} /> 
+        <Route path="/contact" element={<Contact />} />  
+        <Route path="/disclaimer" element={<Disclaimer />} /> 
+        <Route path="/terms" element={<TermsConditions />} />       
         
        
       </Routes>
