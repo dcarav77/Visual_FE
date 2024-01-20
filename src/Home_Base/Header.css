@@ -1,25 +1,24 @@
 /* Header styles */
 .header {
-    background-color: #333;
-    color: white;
-    padding: 9% 0;
-    text-align: center;
-  }
-  
-  /* Navigation links */
-  .nav {
-    display: flex;
-    justify-content: center;
-  }
-  
-  .nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 20px;
-    font-size: 18px;
-  }
-  
-  .nav a:hover {
-    text-decoration: underline;
-  }
-  
+  background-color: #333;
+  color: white;
+  padding: 2% 0; /* Reduced padding for a thinner header */
+  text-align: center;
+}
+
+/* Navigation links */
+.nav {
+  display: flex;
+  justify-content: center;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 20px;
+  font-size: 18px;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}

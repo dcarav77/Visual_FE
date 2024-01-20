@@ -1,4 +1,35 @@
-/* home.css - Original and Updated Styles */
+/* Add this at the top of your CSS file */
+@-webkit-keyframes glowing {
+  0% { background-color: #2ba805; box-shadow: 0 0 5px #2ba805; }
+  50% { background-color: #49e819; box-shadow: 0 0 20px #49e819; }
+  100% { background-color: #2ba805; box-shadow: 0 0 5px #2ba805; }
+}
+
+@keyframes glowing {
+  0% { background-color: #2ba805; box-shadow: 0 0 5px #2ba805; }
+  50% { background-color: #49e819; box-shadow: 0 0 20px #49e819; }
+  100% { background-color: #2ba805; box-shadow: 0 0 5px #2ba805; }
+}
+
+/* Modify .cta-button class */
+.cta-button {
+  /* Existing styles */
+  background-color: #0015ff; /* Change this to your preferred starting color */
+  color: #fff;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+
+  /* Add the animation */
+  -webkit-animation: glowing 1300ms infinite;
+  animation: glowing 1300ms infinite;
+}
+
+.cta-button:hover {
+  background-color: #b30086; /* Adjust hover color as needed */
+}
+
 
 .Home {
   text-align: center;
