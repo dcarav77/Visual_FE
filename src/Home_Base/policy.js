@@ -70,6 +70,52 @@ function PrivacyPolicy() {
 
   <p><strong>HOW DO WE PROTECT PERSONAL DATA?</strong> We undertake reasonable measures, including using encryption technology, to keep your Personal Data safe. However, no electronic data transmission or storage of information can be guaranteed to be 100% secure. Please note that we cannot ensure or warrant the security of any information you transmit to us. It is important for you to protect against unauthorized access to your password and other personal information and to your computer. Be sure to sign off when finished using a shared computer.</p>
 
+  <h2>Clarification on SMS and Email Communications</h2>
+
+  <h3>SMS Communications through Twilio:</h3>
+  <p>When you sign up for our services, we use the Twilio API to send you an SMS message. This message may include confirmation of registration, important updates about our services, or other information relevant to your use of our app.</p>
+  <p><strong>Opt-Out Option:</strong> If at any time you wish to stop receiving SMS messages from us, you can opt-out by replying with a specific keyword like "STOP" to the received message. Upon receiving your opt-out request, we will cease sending you further SMS communications.</p>
+
+  <h3>Email Communications through SendGrid:</h3>
+  <p>Similarly, upon registration, you will receive an email through SendGrid. These emails serve to confirm your account, provide details about our services, or offer relevant updates and information.</p>
+  <p><strong>Opting Out of Emails:</strong> You can unsubscribe from our email communications at any time. Each email we send will include an unsubscribe link at the bottom. By clicking this link, you will be removed from our email distribution lists and will no longer receive email communications from us.</p>
+
+  <h3>Data Usage and Privacy:</h3>
+  <p>We respect your privacy and ensure that your contact details are used solely for legitimate communication purposes related to our services. Your phone number and email address are stored securely and are not shared with third parties for marketing purposes without your explicit consent.</p>
+
+  <h2>WhatsApp Business Communication</h2>
+  
+  <p>As part of our commitment to providing personalized and interactive service, we direct our clients to a private WhatsApp Business group. This platform allows us, and other group members, to connect and exchange messages. Here's how we handle data in this context:</p>
+
+  <ul>
+    <li><strong>Data Sharing and Privacy:</strong> When you join our WhatsApp Business group, you will be sharing your WhatsApp contact information with us and other members of the group. We value your privacy and remind all members to respect the confidentiality of information shared within the group.</li>
+    <li><strong>Use of Information:</strong> The messages and content shared in the WhatsApp group are primarily for fostering community support, providing fitness tips, and addressing service-related queries. We advise against sharing sensitive personal information in the group setting.</li>
+    <li><strong>Data Collection:</strong> We do not actively collect or store personal data shared in the WhatsApp group for any purposes outside the group’s intended use. However, please be aware that interactions within the group are subject to WhatsApp’s terms and privacy policy.</li>
+    <li><strong>Opting Out:</strong> You have the option to leave the WhatsApp group at any time. If you choose to leave, your messages may remain in the group’s history, as per WhatsApp’s policy.</li>
+  </ul>
+
+  <p>We encourage all group members to maintain a respectful and supportive environment. For any concerns or questions about the use of WhatsApp for client communication, please contact us at admin@strongallalong.coach.</p>
+
+  <h2>International Data Transfer Compliance</h2>
+
+<p>As we operate across different international regions, including Europe, the United States, and Albania, we recognize the importance of complying with the various data protection laws applicable in these areas. Our approach to international data transfer is designed to ensure the secure and lawful processing of your Personal Data.</p>
+
+<ul>
+  <li><strong>Compliance with EU Data Protection Laws:</strong> For clients within the European Union, we adhere to the General Data Protection Regulation (GDPR) standards. This includes ensuring that any transfer of Personal Data outside the EU is carried out in compliance with GDPR, providing necessary safeguards.</li>
+  <li><strong>Transfers to and from the United States:</strong> When transferring data to and from the United States, we take steps to ensure that such transfers are conducted in accordance with applicable privacy laws and international agreements to ensure the protection of your Personal Data.</li>
+  <li><strong>Handling Data in Albania:</strong> For our clients in Albania, we comply with local data protection laws and ensure that international transfers are handled with the same level of security and legal compliance.</li>
+  <li><strong>Safeguarding Data During Transfers:</strong> Regardless of where you are located, we implement appropriate safeguards to protect your Personal Data during its transfer. This includes the use of encryption and other forms of security measures.</li>
+</ul>
+
+<h3>Cookies from Our Site</h3>
+  <p>The cookies set by our website are primarily for functionality, such as maintaining user sessions, storing preferences, and enabling essential website features. These are first-party cookies, which are crucial for the smooth operation of our site.</p>
+
+  <h3>Cookies from Stripe for Payment Processing</h3>
+  <p>We use Stripe as our payment processor, and Stripe sets third-party cookies on our site. These cookies, from domains like <a href="https://js.stripe.com">js.stripe.com</a> and <a href="https://m.stripe.network">m.stripe.network</a>, are used for secure payment transactions and fraud prevention. They are essential for processing payments securely on our website.</p>
+
+  <p><strong>Consent and Control:</strong> We are committed to your privacy and ensure that all cookie usage is in line with legal requirements. Depending on your location and subject to applicable laws, you may be asked for consent for non-essential cookies. You can manage your cookie preferences in your web browser settings at any time.</p>
+
+  <p>If you have any questions or require more information about our cookie usage, please feel free to contact us at <a href="mailto:admin@strongallalong.coach">admin@strongallalong.coach</a>.</p>
 
     
     </div>
