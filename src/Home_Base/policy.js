@@ -72,29 +72,38 @@ function PrivacyPolicy() {
 
   <h2>Clarification on SMS and Email Communications</h2>
 
-  <h3>SMS Communications through Twilio:</h3>
-  <p>When you sign up for our services, we use the Twilio API to send you an SMS message. This message may include confirmation of registration, important updates about our services, or other information relevant to your use of our app.</p>
-  <p><strong>Opt-Out Option:</strong> If at any time you wish to stop receiving SMS messages from us, you can opt-out by replying with a specific keyword like "STOP" to the received message. Upon receiving your opt-out request, we will cease sending you further SMS communications.</p>
+<h3>SMS Communications through Twilio:</h3>
+<p>When you sign up for our services, we use the Twilio API to send you an SMS message. This message may include confirmation of registration, important updates about our services, or other information relevant to your use of our app.</p>
 
-  <h3>Email Communications through SendGrid:</h3>
-  <p>Similarly, upon registration, you will receive an email through SendGrid. These emails serve to confirm your account, provide details about our services, or offer relevant updates and information.</p>
-  <p><strong>Opting Out of Emails:</strong> You can unsubscribe from our email communications at any time. Each email we send will include an unsubscribe link at the bottom. By clicking this link, you will be removed from our email distribution lists and will no longer receive email communications from us.</p>
+<h4>Opt-In for Transactional SMS:</h4>
+<p>During your transaction process on our website, we offer the option to receive SMS messages regarding your purchase. This service is designed to provide you with timely updates and confirmations about your recent transactions.</p>
+<p><strong>How to Opt-In:</strong> To receive transactional SMS messages, you must explicitly consent during the checkout process by selecting the designated checkbox. These messages will include order confirmation, payment status, and shipment tracking details.</p>
 
-  <h3>Data Usage and Privacy:</h3>
-  <p>We respect your privacy and ensure that your contact details are used solely for legitimate communication purposes related to our services. Your phone number and email address are stored securely and are not shared with third parties for marketing purposes without your explicit consent.</p>
+<h4>Nature of the SMS Messages:</h4>
+<p>The SMS messages sent by us are purely transactional, intended to keep you informed about your recent purchase and are not for promotional purposes.</p>
 
-  <h2>WhatsApp Business Communication</h2>
-  
-  <p>As part of our commitment to providing personalized and interactive service, we direct our clients to a private WhatsApp Business group. This platform allows us, and other group members, to connect and exchange messages. Here's how we handle data in this context:</p>
+<h4>Opt-Out Option:</h4>
+<p>If at any time you wish to stop receiving SMS messages from us, you can opt-out by replying with a specific keyword like "STOP" to the received message. Upon receiving your opt-out request, we will cease sending you further SMS communications.</p>
 
-  <ul>
-    <li><strong>Data Sharing and Privacy:</strong> When you join our WhatsApp Business group, you will be sharing your WhatsApp contact information with us and other members of the group. We value your privacy and remind all members to respect the confidentiality of information shared within the group.</li>
-    <li><strong>Use of Information:</strong> The messages and content shared in the WhatsApp group are primarily for fostering community support, providing fitness tips, and addressing service-related queries. We advise against sharing sensitive personal information in the group setting.</li>
-    <li><strong>Data Collection:</strong> We do not actively collect or store personal data shared in the WhatsApp group for any purposes outside the group’s intended use. However, please be aware that interactions within the group are subject to WhatsApp’s terms and privacy policy.</li>
-    <li><strong>Opting Out:</strong> You have the option to leave the WhatsApp group at any time. If you choose to leave, your messages may remain in the group’s history, as per WhatsApp’s policy.</li>
-  </ul>
+<h3>Email Communications through SendGrid:</h3>
+<p>Similarly, upon registration, you will receive an email through SendGrid. These emails serve to confirm your account, provide details about our services, or offer relevant updates and information.</p>
+<p><strong>Opting Out of Emails:</strong> You can unsubscribe from our email communications at any time. Each email we send will include an unsubscribe link at the bottom. By clicking this link, you will be removed from our email distribution lists and will no longer receive email communications from us.</p>
 
-  <p>We encourage all group members to maintain a respectful and supportive environment. For any concerns or questions about the use of WhatsApp for client communication, please contact us at admin@strongallalong.coach.</p>
+<h3>Data Usage and Privacy:</h3>
+<p>We respect your privacy and ensure that your contact details are used solely for legitimate communication purposes related to our services. Your phone number and email address are stored securely and are not shared with third parties for marketing purposes without your explicit consent.</p>
+
+<h2>WhatsApp Business Communication</h2>
+
+<p>As part of our commitment to providing personalized and interactive service, we direct our clients to a private WhatsApp Business group. This platform allows us, and other group members, to connect and exchange messages. Here's how we handle data in this context:</p>
+
+<ul>
+  <li><strong>Data Sharing and Privacy:</strong> When you join our WhatsApp Business group, you will be sharing your WhatsApp contact information with us and other members of the group. We value your privacy and remind all members to respect the confidentiality of information shared within the group.</li>
+  <li><strong>Use of Information:</strong> The messages and content shared in the WhatsApp group are primarily for fostering community support, providing fitness tips, and addressing service-related queries. We advise against sharing sensitive personal information in the group setting.</li>
+  <li><strong>Data Collection:</strong> We do not actively collect or store personal data shared in the WhatsApp group for any purposes outside the group’s intended use. However, please be aware that interactions within the group are subject to WhatsApp’s terms and privacy policy.</li>
+  <li><strong>Opting Out:</strong> You have the option to leave the WhatsApp group at any time. If you choose to leave, your messages may remain in the group’s history, as per WhatsApp’s policy.</li>
+</ul>
+
+<p>We encourage all group members to maintain a respectful and supportive environment. For any concerns or questions about the use of WhatsApp for client communication, please contact us at admin@strongallalong.coach.</p>
 
   <h2>International Data Transfer Compliance</h2>
 
