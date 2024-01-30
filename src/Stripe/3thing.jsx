@@ -58,6 +58,7 @@ export const Return = () => {
     const [status, setStatus] = useState(null);
     const [error, setError] = useState(null);
     const [optInSMS, setOptInSMS] = useState(false);
+    const [phoneNumber, setPhoneNumber] = useState('');
 
     const handleOptIn = () => {
         const sessionId = new URLSearchParams(window.location.search).get('session_id');
@@ -69,15 +70,31 @@ export const Return = () => {
                 },
                 body: JSON.stringify({ 
                     sessionId: sessionId, 
-                    optInSMS: optInSMS 
+                    optInSMS: optInSMS,
+                    phoneNumber: phoneNumber
                 })
             })
             .then(response => response.json())
             .then(data => {
-                // Handle the response here (e.g., show a confirmation message)
-            });
+              if (optInSMS) {
+                triggerSMS(sessionId);
+              } 
+          });
         }
     };
+
+    const triggerSMS = (sessionId) => {
+      fetch(`${process.env.REACT_APP_API_URL}/api/trigger-sms`, {
+          method: "POST",
+          headers: {'Content-Type': 'application/json'},
+          body: JSON.stringify({ sessionId: sessionId })
+      })
+      .then(response => response.json())
+      .then(data => {
+          // Handle the response here
+          // E.g., show a confirmation message that SMS has been sent
+      });
+  };
 
     useEffect(() => {
         console.log("Render check, Status:", status, "Error:", error);
@@ -143,6 +160,12 @@ export const Return = () => {
                         onChange={() => setOptInSMS(!optInSMS)}
                     />
                     <label htmlFor="smsOptIn">Opt-in to receive SMS updates</label>
+                    <input
+                        type="text"
+                        placeholder="Enter your phone number"
+                        value={phoneNumber}
+                        onChange={(e) => setPhoneNumber(e.target.value)}
+                    />
                 </div>
                 <button onClick={handleOptIn}>Confirm Opt-In</button>
             </section>
