@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { loadStripe } from '@stripe/stripe-js';
 import { EmbeddedCheckoutProvider, EmbeddedCheckout } from '@stripe/react-stripe-js';
 import { useLocation } from "react-router-dom";
+import './three_thing.css';
 
 const stripePromise = loadStripe(process.env.REACT_APP_STRIPE_KEY);
 
@@ -151,7 +152,7 @@ export const Return = () => {
     if (status === 'complete') {
         return (
             <section id="success">
-                <p>We appreciate your business!</p>
+                <p>Time to get to work, check your email for instructions!</p>
                 <div className="sms-opt-in">
                     <input
                         type="checkbox"
