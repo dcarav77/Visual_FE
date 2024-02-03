@@ -152,7 +152,9 @@ export const Return = () => {
     if (status === 'complete') {
         return (
             <section id="success">
-                <p>Time to get to work, check your email for instructions!</p>
+                <h3>Thanks for your purchase with Strong all Along</h3>
+                <h3>Get access to instant account updates when you sign up for texts </h3>
+         
                 <div className="sms-opt-in">
                     <input
                         type="checkbox"
@@ -160,7 +162,8 @@ export const Return = () => {
                         checked={optInSMS}
                         onChange={() => setOptInSMS(!optInSMS)}
                     />
-                    <label htmlFor="smsOptIn">Opt-in to receive SMS updates</label>
+                    <label htmlFor="smsOptIn">I agree to receive marketing messaging from Strong all Along at the phone number provided. Consent is not a condition of purchase. I understand I will receive transactional updates and occasional promotional offers, data rates may apply. 
+                    <a href="/privacy-policy" target="_blank">View our Privacy Policy</a>. Unsubscribe at any time by replying STOP.</label>
                     <input
                         type="text"
                         placeholder="Enter your phone number"
@@ -175,3 +178,5 @@ export const Return = () => {
 
     return null;
 };
+
+
