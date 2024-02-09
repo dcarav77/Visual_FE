@@ -42,8 +42,8 @@ function Fitness() {
         <span className="checkmark">✔</span>
         <div className="list-content">
           
-          <h3>60 minute Zoom Video Call </h3>
-          <h4>Weekly Reflection & Core Principles Sheet</h4>
+          <h3>Weekly 60 minute Zoom Video Call </h3>
+          <h4>Reflection & Core Principles Sheet</h4>
           <h5>Life & Personal Growth Focused</h5>
           <p>Q&A Sessions - "How do I handle family & friends who want me to drink?"</p>
         </div>
