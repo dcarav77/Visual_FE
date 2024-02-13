@@ -38,7 +38,7 @@
 
 /* Hero Section */
 .hero {
-  background-image: url('../../public/images/ohb.png');
+  background-image: url('/Users/dustin_caravaglia/Documents/repo/Visual_FE/public/images/ohb.png');
   background-size: contain;
   background-position: center top;
   background-repeat: no-repeat; 
@@ -117,7 +117,7 @@
 
 /* Four-pic Section - Updated Styles */
 .four-pic {
-  background-image: url('../../public/images/channelchanger.jpeg');
+  background-image: url('/Users/dustin_caravaglia/Documents/repo/Visual_FE/public/images/channelchanger.jpeg');
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
