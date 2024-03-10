@@ -152,7 +152,8 @@ export const Return = () => {
     if (status === 'complete') {
         return (
             <section id="success">
-                <h3>Thanks for your purchase with Strong all Along</h3>
+                <h1>Thanks for your purchase with Strong all Along</h1>
+                <h2>Check Spam if you do not see an email from admin@strongallalong.coach</h2>
                 <h3>Get access to instant account updates when you sign up for texts </h3>
          
                 <div className="sms-opt-in">
